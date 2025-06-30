@@ -1,0 +1,40 @@
+{
+    "page": "contact-us",
+    "sections": {
+        "contactForm": {
+            "subHeading": "CONTACT US",
+            "title": "Get in touch, let us know how can we help",
+            "address": {
+                "mail": [
+                    "info@alsais-trading.com",
+                    "alsays@alsais-trading.com"
+                ],
+                "address": "P1-ELOB Office No. E2-102F-60 PO Box No. 42966 Hamriyah Free Zone – Sharjah United Arab Emirates",
+                "phone": "+1 (555) 000-0000"
+            }
+        },
+        "location": {
+            "title": "Our global presences",
+            "locations": [
+                {
+                    "country": "UAE",
+                    "location": "Al Says Company FZE",
+                    "address": "P1-ELOB Office No. E2-102F-60, PO Box No. 42966 Hamriyah Free Zone – Sharjah, United Arab Emirates",
+                    "map": ""
+                },
+                {
+                    "country": "KUWAIT",
+                    "location": "Al Says Company General Trading for Equipment & Machinery.",
+                    "address": "Munther Tower, Al Soor Street Salhiya PO BOX 29447, Safat; 13155, Kuwait",
+                    "map": ""
+                },
+                {
+                    "country": "IRAQ",
+                    "location": "Al Says Al Khaleeji for Trading & General Contracting Co Ltd.",
+                    "address": "Office No. 803/3, Hay Al-Tahrir, Safwan, Basra, Iraq",
+                    "map": ""
+                }
+            ]
+        }
+    }
+}

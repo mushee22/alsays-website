@@ -1,0 +1,67 @@
+{
+    "page": "career",
+    "sections": {
+        "hero": {
+            "name": "hero-section",
+            "heading": "Empowering People, Driving Progress",
+            "subHeading": "",
+            "action": {
+                "title": "View positions",
+                "path": ""
+            },
+            "description": "At Alsais Trading Co., we believe our people are our greatest strength. Join a dynamic and growing team dedicated to excellence, innovation, and service."
+        },
+        "career": {
+            "openings": [
+                {
+                    "title": "Senior Application Engineer, Business Platform",
+                    "type": "Remote"
+                },
+                {
+                    "title": "Senior Application Engineer, Business Platform",
+                    "type": "Remote"
+                },
+                {
+                    "title": "Senior Application Engineer, Business Platform",
+                    "type": "On Site"
+                }
+            ]
+        },
+        "whyWorkWithUs": {
+            "subHeading": "PERKS",
+            "title": "Why Work With Us",
+            "description": "",
+            "benefits": [
+                {
+                    "title": "Competitive salaries",
+                    "description": "Routine inspections, troubleshooting, and repairs to avoid downtime."
+                },
+                {
+                    "title": "Professional growth & training",
+                    "description": "Routine inspections, troubleshooting, and repairs to avoid downtime."
+                },
+                {
+                    "title": "Supportive work culture",
+                    "description": "Routine inspections, troubleshooting, and repairs to avoid downtime."
+                },
+                {
+                    "title": "Health & safety-focused environment",
+                    "description": "Routine inspections, troubleshooting, and repairs to avoid downtime."
+                },
+                {
+                    "title": "Opportunities across diverse industries",
+                    "description": "Routine inspections, troubleshooting, and repairs to avoid downtime."
+                },
+                {
+                    "title": "And more...",
+                    "description": "Routine inspections, troubleshooting, and repairs to avoid downtime."
+                }
+            ]
+        },
+        "ourWorkCulture": {
+            "subHeading": "CULTURE",
+            "title": "Our Work Culture",
+            "description": "We foster a collaborative, respectful, and inclusive environment where innovation and integrity are encouraged. Every voice matters, and every role contributes to our success."
+        }
+    }
+}

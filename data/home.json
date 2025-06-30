@@ -1,0 +1,115 @@
+{
+    "page": "home",
+    "sections": {
+        "hero": {
+            "name": "hero-section",
+            "heading": "",
+            "subHeading": "",
+            "description": ""
+        },
+        "trustedBrands": {
+            "name": "",
+            "title": "TRUSTED BY TOP BRANDS WORLDWIDE"
+        },
+        "service": {
+            "title": "",
+            "description": "",
+            "action": {
+                "title": "Explore Service",
+                "path": ""
+            }
+        },
+        "about": {
+            "title": "We are a trusted Saudi company specializing in trading, contracting, and supply services across diverse sectors.",
+            "subHeading": "WHO WE ARE",
+            "description": "Our team brings deep industry expertise, a commitment to quality, and a proactive approach that ensures every project is completed on time and to the highest standards. Whether it's procurement, logistics, or turnkey contracting, Alsais Trading Co. is your reliable partner in driving progress and building lasting value.",
+            "statistics": [
+                {
+                    "count": "200+",
+                    "name": "Projects",
+                    "description": "Successfully Completed Across Saudi Arabia"
+                },
+                {
+                    "count": "50+",
+                    "name": "Clients",
+                    "description": "Trusted Partners in Public & Private Sectors"
+                },
+                {
+                    "count": "100%",
+                    "name": "Commitments",
+                    "description": "To Quality, Safety & Client Satisfaction"
+                }
+            ],
+            "action": {
+                "title": "Read More",
+                "path": ""
+            }
+        },
+        "ourProductAndService": {
+            "description": "From procurement to project execution, Alsais Trading Co. delivers tailored solutions with unmatched reliability and professionalism.",
+            "title": "Delivering Value Through Services",
+            "subHeading": "OUR PRODUCTS & SERVICES",
+            "action": {
+                "title": "Explore all",
+                "path": ""
+            },
+            "productsAndServices": [
+                {
+                    "name": "Operations and Maintenance",
+                    "description": "Operations and Maintenance of camps and on shore oil rigs is one of our core competencies, with our personnel having experience doing this work for various MNC’s and Armed Forces. With a combined experience of over a decade operating in the region and doing similar work. As a part of Operations and Maintenance we provide the following services",
+                    "services": [
+                        "Maintenance of Generators",
+                        "Black water, Grey Water Removal",
+                        "Maintenance of Generators",
+                        "Black water, Grey Water Removal",
+                        "Maintenance of Generators",
+                        "Black water, Grey Water Removal"
+                    ],
+                    "action": {
+                        "title": "Read More",
+                        "path": ""
+                    }
+                },
+                {
+                    "name": "Operations and Maintenance",
+                    "description": "Operations and Maintenance of camps and on shore oil rigs is one of our core competencies, with our personnel having experience doing this work for various MNC’s and Armed Forces. With a combined experience of over a decade operating in the region and doing similar work. As a part of Operations and Maintenance we provide the following services",
+                    "services": [
+                        "Maintenance of Generators",
+                        "Black water, Grey Water Removal",
+                        "Maintenance of Generators",
+                        "Black water, Grey Water Removal",
+                        "Maintenance of Generators",
+                        "Black water, Grey Water Removal"
+                    ],
+                    "action": {
+                        "title": "Read More",
+                        "path": ""
+                    }
+                },
+                {
+                    "name": "Operations and Maintenance",
+                    "description": "Operations and Maintenance of camps and on shore oil rigs is one of our core competencies, with our personnel having experience doing this work for various MNC’s and Armed Forces. With a combined experience of over a decade operating in the region and doing similar work. As a part of Operations and Maintenance we provide the following services",
+                    "services": [
+                        "Maintenance of Generators",
+                        "Black water",
+                        "Grey Water Removal",
+                        "Maintenance of Generators",
+                        "Black water",
+                        "Grey Water Removal",
+                        "Maintenance of Generators",
+                        "Black water",
+                        "Grey Water Removal"
+                    ],
+                    "action": {
+                        "title": "Read More",
+                        "path": ""
+                    }
+                }
+            ]
+        },
+        "whatWeAre": {
+            "title": "Driven by excellence and built on trust, we deliver reliable solutions that meet the needs of modern industries across Saudi Arabia.",
+            "description": "We have the capability to design, procure and install electrical systems that includes design and install of panels, cabling and power generation systems for camps and onshore rigs. Some of our capabilities are:"
+        }
+    }
+}
