@@ -21,7 +21,7 @@ export default function MegaMenu({ isOpen, show, activeMenu, hoveredItemId, onIt
     return (
         <div
             className={cn(
-                "max-w-7xl mx-auto max-lg:hidden top-full left-0 z-20 w-full p-6 bg-white border border-gray-100 rounded-b-2xl shadow-lg transition-all duration-300 overflow-hidden",
+                "max-w-7xl mx-auto absolute  max-lg:hidden top-full left-1/2 -translate-x-1/2 z-20 w-full p-6 bg-white border border-gray-100 rounded-b-2xl shadow-lg transition-all duration-300 overflow-hidden",
                 (isOpen && show) ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none",
             )}
             style={{ height: isOpen ? "400px" : "0" }}

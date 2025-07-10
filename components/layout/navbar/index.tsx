@@ -146,8 +146,8 @@ export default function NavBar() {
 
     return (
         <>
-            <header className="fixed inset-0 z-20">
-                <nav className={cn("flex mx-auto lg:mt-8 z-20 w-full  max-w-7xl items-center max-lg:justify-between bg-white lg:border border-grey-100  px-4 @7xl:px-0 lg:shadow-card-md transition-all duration-200 max-lg:rounded-none", open ? "lg:rounded-ss-2xl rounded-se-2xl" : 'rounded-2xl delay-300', show ? 'translate-y-0' : '-translate-y-[200px]')}>
+            <header className="fixed w-full z-30">
+                <nav className={cn("flex mx-auto lg:mt-8 z-20 w-full  max-w-7xl items-center max-lg:justify-between bg-white lg:border border-grey-100  px-4 @7xl:px-0 lg:shadow-card-md transition-all duration-200 max-lg:rounded-none", open ? "lg:rounded-ss-2xl lg:border-b-0 rounded-se-2xl" : 'rounded-2xl delay-300', show ? 'translate-y-0' : '-translate-y-[200px]')}>
                     <h1 className="aspect-[97/68] h-[48px] md:h-[60px]  lg:h-[68px] relative">
                         <Link href="/" >
                             <Image
@@ -198,7 +198,7 @@ export default function NavBar() {
                     activeMenu={activeMenu}
                     show={show}
                 />
-                <div className="absolute inset-0  -z-10" onClick={() => handleSubmenuToggle('')}></div>
+                {/* <div className="absolute inset-0  -z-10" onClick={() => handleSubmenuToggle('')}></div> */}
             </header>
             <MobileMenu
                 isOpen={isMobileMenuOpen}
