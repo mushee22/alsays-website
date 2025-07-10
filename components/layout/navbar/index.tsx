@@ -35,7 +35,11 @@ export default function NavBar() {
 
 
     const MENU_DATA: Menu[] = useMemo(() => [
-        { title: "About Us", path: "/about-us", id: "ABOUT_US" },
+        {
+            title: "About Us",
+            path: "/about-us",
+            id: "ABOUT_US"
+        },
         {
             title: "Products & Services",
             id: "PRODUCT_AND_SERVICES",
@@ -46,11 +50,17 @@ export default function NavBar() {
                         {
                             title: "Rubber Mats",
                             subMenu: [
-                                { title: "Gym Mats" },
-                                { title: "Swimming Pool Mats" },
-                                { title: "Stable Mats" }
-
+                                {
+                                    title: "Gym Mats",
+                                },
+                                {
+                                    title: "Swimming Pool Mats"
+                                },
+                                {
+                                    title: "Stable Mats"
+                                }
                             ],
+
                         },
                         {
                             title: "Industrial Mats",
@@ -61,12 +71,17 @@ export default function NavBar() {
 
                         },
                     ],
+                    path:"/product/category"
                 },
                 {
                     title: "FMCG",
                     subMenu: [
-                        { title: "Women & Lady Care Products" },
-                        { title: "Hygiene Care" }
+                        {
+                            title: "Women & Lady Care Products",
+                        },
+                        {
+                            title: "Hygiene Care"
+                        }
                     ]
                 },
                 {
@@ -82,26 +97,31 @@ export default function NavBar() {
                         },
                         {
                             title: "Air Conditioning Parts",
-
                         },
                     ],
                 },
                 {
                     title: "HVAC Spare Parts",
                     subMenu: [
-                        { title: "A/C Units" }
+                        {
+                            title: "A/C Units"
+                        }
                     ]
                 },
                 {
                     title: "Oilfield Equipment",
                     subMenu: [
-                        { title: "Pumps" }
+                        { 
+                            title: "Pumps" 
+                        }
                     ]
                 },
                 {
                     title: "Construction Materials",
                     subMenu: [
-                        { title: "Steel & Steel Structures" }
+                        { 
+                            title: "Steel & Steel Structures" 
+                        }
                     ]
                 },
             ],
@@ -121,6 +141,8 @@ export default function NavBar() {
     const open = !!activeSubmenuId
 
     const activeMenu = MENU_DATA.find((item) => item.id === activeSubmenuId)
+
+    // console.log(open, "open")
 
     return (
         <>
@@ -174,8 +196,9 @@ export default function NavBar() {
                     isOpen={open}
                     onItemHover={handleItemHover}
                     activeMenu={activeMenu}
+                    show={show}
                 />
-                <div className="absolute inset-0  -z-10" onClick={()=> handleSubmenuToggle('')}></div>  
+                <div className="absolute inset-0  -z-10" onClick={() => handleSubmenuToggle('')}></div>
             </header>
             <MobileMenu
                 isOpen={isMobileMenuOpen}

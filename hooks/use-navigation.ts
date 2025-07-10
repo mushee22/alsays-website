@@ -32,18 +32,13 @@ export const useNavigation = () => {
             })
         }
 
-        return () => {
-            clearTimeout(timeOut)
-        }
     }, [])
 
-    // Close mobile menu on route change
     useEffect(() => {
         setIsMobileMenuOpen(false)
         setActiveSubmenuId(undefined)
     }, [pathname])
 
-    // Close mobile menu on escape key
     useEffect(() => {
         const handleEscape = (e: KeyboardEvent) => {
             if (e.key === "Escape") {
@@ -71,30 +66,14 @@ export const useNavigation = () => {
 
     const handleSubmenuToggle = useCallback((id: string) => {
 
-        if (timeOut) {
-            clearTimeout(timeOut)
-        }
-
-        if (!id) {
+        if (!id || id == activeSubmenuId) {
             setActiveSubmenuId(undefined)
             return
         }
 
-        if (!activeSubmenuId) {
-            setActiveSubmenuId(id)
-            return
-        }
-
-        setActiveSubmenuId((prevId) => {
-            if (!prevId) return id;
-            if (prevId == id) return undefined;
-            timeOut = setTimeout(() => {
-                setActiveSubmenuId(id)
-            }, 500)
-            return undefined
-        })
-
-    }, [])
+        setActiveSubmenuId(id);
+        
+    }, [activeSubmenuId])
 
 
 

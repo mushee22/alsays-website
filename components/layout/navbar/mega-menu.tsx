@@ -10,9 +10,10 @@ interface MegaMenuProps {
     activeMenu?: MenuItem
     hoveredItemId?: string
     onItemHover: (id?: string) => void
+    show?: boolean;
 }
 
-export default function MegaMenu({ isOpen, activeMenu, hoveredItemId, onItemHover }: MegaMenuProps) {
+export default function MegaMenu({ isOpen, show, activeMenu, hoveredItemId, onItemHover }: MegaMenuProps) {
 
     const currentSubmenu = activeMenu?.subMenu?.find((item) => item.title == hoveredItemId);
 
@@ -21,7 +22,7 @@ export default function MegaMenu({ isOpen, activeMenu, hoveredItemId, onItemHove
         <div
             className={cn(
                 "max-w-7xl mx-auto max-lg:hidden top-full left-0 z-20 w-full p-6 bg-white border border-gray-100 rounded-b-2xl shadow-lg transition-all duration-300 overflow-hidden",
-                isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none",
+                (isOpen && show) ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none",
             )}
             style={{ height: isOpen ? "400px" : "0" }}
         >

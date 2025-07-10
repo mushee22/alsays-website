@@ -33,6 +33,8 @@ import SustainabilityHeroImage from "@/assets/images/sustainability/sustainabili
 
 import MenuSideImage from "@/assets/images/layout/menu-side-image.png";
 
+import WhyChooseUsImage from "@/assets/images/product/why-choose-us.png";
+
 
 export {
     AboutHeroSectionBgImage,
@@ -60,6 +62,7 @@ export {
     ServiceImage,
     SustainabilityAboutSectionImage,
     SustainabilityHeroImage,
+    WhyChooseUsImage,
     XIcon,
     YoutubeIcon
 };
