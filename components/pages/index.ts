@@ -9,6 +9,7 @@ import MarketPresencePage from "./market-presence";
 import NewsPage from "./news";
 import NewsDetaisPage from "./news/details";
 import PrivacyAndPolicyPage from "./privacy-and-policy";
+import ProductPage from "./product";
 import CategoryPage from "./product/category";
 import SustainabilityPage from "./sustainability";
 import TermsAndConditionPage from "./terms-and-conditions";
@@ -18,11 +19,16 @@ export {
     BlogDetailsPage,
     BlogPage,
     CareerDetailPage,
-    CareerPage, CategoryPage, ContactPage,
+    CareerPage,
+    CategoryPage,
+    ContactPage,
     HomePage,
     MarketPresencePage,
     NewsDetaisPage,
     NewsPage,
-    PrivacyAndPolicyPage, SustainabilityPage, TermsAndConditionPage
+    PrivacyAndPolicyPage,
+    ProductPage,
+    SustainabilityPage,
+    TermsAndConditionPage
 };
 

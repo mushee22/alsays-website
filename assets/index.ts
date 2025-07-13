@@ -35,10 +35,17 @@ import MenuSideImage from "@/assets/images/layout/menu-side-image.png";
 
 import WhyChooseUsImage from "@/assets/images/product/why-choose-us.png";
 
+import BannerImageOne from "@/assets/images/home/b-1.png";
+import BannerImageTwo from "@/assets/images/home/b-2.png";
+import BannerImageThree from "@/assets/images/home/b-3.png";
+import BannerImageFour from "@/assets/images/home/b-4.png";
+import BannerImageFive from "@/assets/images/home/b-5.png";
+import BannerImageSix from "@/assets/images/home/b-6.png";
+import BannerImageSeven from "@/assets/images/home/b-7.png";
+
 
 export {
-    AboutHeroSectionBgImage,
-    BannerOneImage,
+    AboutHeroSectionBgImage, BannerImageFive, BannerImageFour, BannerImageOne, BannerImageSeven, BannerImageSix, BannerImageThree, BannerImageTwo, BannerOneImage,
     BannerThreeImage,
     BannerTwoImage,
     BlogImage,
