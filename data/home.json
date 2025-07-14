@@ -20,9 +20,9 @@
             }
         },
         "about": {
-            "title": "We are a trusted Saudi company specializing in trading, contracting, and supply services across diverse sectors.",
-            "subHeading": "WHO WE ARE",
-            "description": "Our team brings deep industry expertise, a commitment to quality, and a proactive approach that ensures every project is completed on time and to the highest standards. Whether it's procurement, logistics, or turnkey contracting, Alsais Trading Co. is your reliable partner in driving progress and building lasting value.",
+            "title": "AL Says is committed to social and environmental initiatives to strengthen the social fabric within the products and services offerings of the regions.",
+            "subHeading": "SUSTAINABILITY IN EVERY STEP",
+            "description": "At AL Says, we intend to achieve this through our processes, high quality products brands and services, and the distribution channels towards the resource efficient, Zero emission, and the reduced environmental warming future. ",
             "statistics": [
                 {
                     "count": "200+",
@@ -42,11 +42,11 @@
             ],
             "action": {
                 "title": "Read More",
-                "path": ""
+                "path": "/sustainability"
             }
         },
         "ourProductAndService": {
-            "description": "From procurement to project execution, Alsais Trading Co. delivers tailored solutions with unmatched reliability and professionalism.",
+            "description": "From procurement to project execution, AL says Trading Co. delivers tailored solutions with unmatched reliability and professionalism.",
             "title": "Delivering Value Through Services",
             "subHeading": "OUR PRODUCTS & SERVICES",
             "action": {
@@ -55,51 +55,52 @@
             },
             "productsAndServices": [
                 {
-                    "name": "Operations and Maintenance",
-                    "description": "Operations and Maintenance of camps and on shore oil rigs is one of our core competencies, with our personnel having experience doing this work for various MNC’s and Armed Forces. With a combined experience of over a decade operating in the region and doing similar work. As a part of Operations and Maintenance we provide the following services",
+                    "name": "Flooring Mats",
+                    "description": "At AL Says specialized in flooring solutions distribute high quality of rubber mats for gyms, swimming pools, stable, and industrial mats including the PP mats and all types of coir mats. AL Says able to provide customized solutions on this for limitless scale of supply. Also, AL Says, provide with the installations of mats if quired by the customer",
                     "services": [
                         "Maintenance of Generators",
                         "Black water, Grey Water Removal",
-                        "Maintenance of Generators",
-                        "Black water, Grey Water Removal",
-                        "Maintenance of Generators",
-                        "Black water, Grey Water Removal"
+                        "Potable Water provision",
+                        "Hazmat removal/Disposal",
+                        "Janitorial Service",
+                        "Workforce augmentation (Provision of Skilled labour like Carpenters, Electricians, Plumbers)",
+                        "Vector Control",
+                        "Warehouse/Store Management",
+                        "Procurement of essentials and LSA consumables"
                     ],
+                    "coverImage": "/service-image-1.png",
                     "action": {
                         "title": "Read More",
                         "path": ""
                     }
                 },
                 {
-                    "name": "Operations and Maintenance",
-                    "description": "Operations and Maintenance of camps and on shore oil rigs is one of our core competencies, with our personnel having experience doing this work for various MNC’s and Armed Forces. With a combined experience of over a decade operating in the region and doing similar work. As a part of Operations and Maintenance we provide the following services",
+                    "name": "FMCG Products",
+                    "description": "AL Says distributes high quality of brands of products under fast moving consumer goods (FMCG), women and baby care, hygienic care, safety care, and medical care. AL Says, represents high quality of brands originally manufacture from Turky. ",
                     "services": [
-                        "Maintenance of Generators",
-                        "Black water, Grey Water Removal",
-                        "Maintenance of Generators",
-                        "Black water, Grey Water Removal",
-                        "Maintenance of Generators",
-                        "Black water, Grey Water Removal"
+                        "Design and build of Camps (Wet and Dry Trailers, Ablution Units etc)",
+                        "Permanent and Semi-Permanent Structures",
+                        "Warehouses and modular warehouse systems",
+                        "Retro Fitting of existing structures",
+                        "MEP works",
+                        "Fire and safety systems",
+                        "Access control systems"
                     ],
+                    "coverImage": "/service-image-2.png",
                     "action": {
                         "title": "Read More",
                         "path": ""
                     }
                 },
                 {
-                    "name": "Operations and Maintenance",
-                    "description": "Operations and Maintenance of camps and on shore oil rigs is one of our core competencies, with our personnel having experience doing this work for various MNC’s and Armed Forces. With a combined experience of over a decade operating in the region and doing similar work. As a part of Operations and Maintenance we provide the following services",
+                    "name": "Automotive Parts & Consumables",
+                    "description": "AL Says distribute Air conditioning parts for light vehicles and other spare parts for mechanical and the general parts as well. This includes compressor, evaporator, condenser, fan, valves, fan motor, cooling parts, A/C oils, radiators, and other. In addition, distribute also parts for trucks and heavy equipment such as engine filters, pump, horses, hydraulic parts, transmission parts, tires, brake parts, lubricants, consumables, and other. AL Says focuses on high quality world known and reputed brands on this both aftermarket and the genuine parts as well. ",
                     "services": [
-                        "Maintenance of Generators",
-                        "Black water",
-                        "Grey Water Removal",
-                        "Maintenance of Generators",
-                        "Black water",
-                        "Grey Water Removal",
-                        "Maintenance of Generators",
-                        "Black water",
-                        "Grey Water Removal"
+                        "Supply and installation of Generators (Both 230 V and 110 V)",
+                        "Design, supply and installation of electrical panels",
+                        "Design, supply and installation of solar panels"
                     ],
+                    "coverImage": "/service-image-3.png",
                     "action": {
                         "title": "Read More",
                         "path": ""

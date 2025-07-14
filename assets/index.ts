@@ -43,13 +43,31 @@ import BannerImageFive from "@/assets/images/home/b-5.png";
 import BannerImageSix from "@/assets/images/home/b-6.png";
 import BannerImageSeven from "@/assets/images/home/b-7.png";
 
+import BrandImageOne from "@/assets/images/brands/b-1.png";
+import BrandImageTen from "@/assets/images/brands/b-10.png";
+import BrandImageEleven from "@/assets/images/brands/b-11.png";
+import BrandImageTwelve from "@/assets/images/brands/b-12.png";
+import BrandImageTwo from "@/assets/images/brands/b-2.png";
+import BrandImageThree from "@/assets/images/brands/b-3.png";
+import BrandImageFour from "@/assets/images/brands/b-4.png";
+import BrandImageFive from "@/assets/images/brands/b-5.png";
+import BrandImageSix from "@/assets/images/brands/b-6.png";
+import BrandImageSeven from "@/assets/images/brands/b-7.png";
+import BrandImageEight from "@/assets/images/brands/b-8.png";
+import BrandImageNine from "@/assets/images/brands/b-9.png";
+
+import AboutLeftImage from "@/assets/images/about/about-us-mission-left-image.png";
+
+import BlogImageOne from "@/assets/images/blog/blog-1.png";
+import BlogImageTwo from "@/assets/images/blog/blog-2.png";
+import BlogImageThree from "@/assets/images/blog/blog-3.png";
+
 
 export {
-    AboutHeroSectionBgImage, BannerImageFive, BannerImageFour, BannerImageOne, BannerImageSeven, BannerImageSix, BannerImageThree, BannerImageTwo, BannerOneImage,
+    AboutHeroSectionBgImage, AboutLeftImage, BannerImageFive, BannerImageFour, BannerImageOne, BannerImageSeven, BannerImageSix, BannerImageThree, BannerImageTwo, BannerOneImage,
     BannerThreeImage,
     BannerTwoImage,
-    BlogImage,
-    CareerImage,
+    BlogImage, BlogImageOne, BlogImageThree, BlogImageTwo, BrandImageEight, BrandImageEleven, BrandImageFive, BrandImageFour, BrandImageNine, BrandImageOne, BrandImageSeven, BrandImageSix, BrandImageTen, BrandImageThree, BrandImageTwelve, BrandImageTwo, CareerImage,
     ClientLogoOneImage,
     ClientLogoThreeImage,
     ClientLogoTwoImage,

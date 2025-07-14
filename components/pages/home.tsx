@@ -1,15 +1,16 @@
 
-import { AboutSection, ContactSection, HeroSection, OurProductAndServicesSection, ServiceSection, TrustedBrandsSection, WhatWeAreSection } from "@/components/sections/home"
+import { AboutSection, ContactSection, HeroSection, OurProductAndServicesSection, TrustedBrandsSection, WhatIsNewSection, WhatWeAreSection } from "@/components/sections/home"
 
 export default function HomePage() {
   return (
     <>
       <HeroSection />
       <TrustedBrandsSection />
-      <ServiceSection />
+      {/* <ServiceSection /> */}
       <AboutSection />
       <OurProductAndServicesSection />
       <WhatWeAreSection/>
+      <WhatIsNewSection/>
       <ContactSection />
     </>
   )

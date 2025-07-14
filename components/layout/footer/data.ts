@@ -33,17 +33,17 @@ export const footer = {
         {
             title: "Company",
             links: [
-                { name: "About Us", link: "/about" },
-                { name: "Blogs", link: "/blogs" },
+                { name: "About Us", link: "/about-us" },
+                { name: "Blogs", link: "/blog" },
                 { name: "Contact us", link: "/contact-us" },
             ]
         },
         {
             title: "Resources",
             links: [
-                { name: "Products", link: "/products" },
-                { name: "Solutions", link: "/solutions" },
-                { name: "Careers", link: "/careers" },
+                // { name: "Products", link: "/products" },
+                { name: "Sustainability", link: "/sustainability" },
+                { name: "Careers", link: "/career" },
             ]
         },
     ],

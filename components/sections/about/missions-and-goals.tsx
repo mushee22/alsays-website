@@ -1,5 +1,7 @@
+import { AboutLeftImage } from "@/assets";
 import Container from "@/components/ui/container";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export default function OurMissionsAndGoalsSection() {
   return (
@@ -7,37 +9,51 @@ export default function OurMissionsAndGoalsSection() {
       <div className="flex flex-col lg:flex-row gap-4">
         <div className="flex-1 flex flex-col  gap-y-5 md:gap-y-10">
           <span className="subheading">MISSION, VISION + GOALS</span>
-          <h2 className="heading-md text-primary">At All Says, we always focus on quality and consistency with good enough market acceptance</h2>
-          <div className="aspect-[3/4] max-h-[463px]  lg:hidden  bg-grey-100 rounded-3xl">
-
+          <h2 className="heading-md text-primary">
+            At AL Says, we always focus on quality and consistency with good enough market acceptance
+          </h2>
+          <div className="aspect-[3/4] max-h-[463px] relative  lg:hidden  bg-grey-100 rounded-3xl">
+            <Image
+              src={AboutLeftImage}
+              alt="About AL Says"
+              fill
+            />
           </div>
           <p className="body-md text-primary">
-            At All Says, our story started with the distribution of high-quality pure rubber flooring mats.
-            Adaptability and change are key aspects to continued evolution, and as a result, All Says recognized the need to diversify its product
-            range to ensure future growth. Accordingly, we have been enlarged our portfolios from flooring mats to FMCG products,
-            Automotive Spare parts, Heavy Equipment parts, HVAC products, Oilfield equipment, construction materials, foodstuffs,
-            and Climate changes & Environmental safety products committed to helping customers to buy a diverse range of products and services.
-            All Says have been in care of sustaining the ecosystems of sustainability sciences, thus, by our core values, as a mandate of caring the environment,
-            human, and the economic goals simultaneously. All Says serves B2B, B2G, B2C,
-            and C2C customer’s needs including both offline and the online channels as well.
-            As customers are seeking for better products and services, All Says’ dedication to customer satisfaction, reliability, flexibility, speedy, faster
-            responses,
-            and good value for money offerings with the rational that every market inquiry is as an exceptional.
+            As mentioned above, we are expanding our product portfolio beyond flooring mats to include FMCG products,
+            automotive spare parts, heavy equipment parts, HVAC products, oilfield equipment, construction materials, foodstuffs,
+            and climate change & environmental safety products.
+            We are committed to helping customers access a diverse range of products and services by
+            collaborating with leading international brands. This enables us to ensure the supply of
+            high-quality products at the most competitive prices, aiming to compete in the global market
+            and drive continued success. By taking flexible strategic steps, we operate with a highly
+            customer-focused approach and pursue sustainable growth with a boundaryless vision.
+            <br />
+            AL Says serves the needs of B2B, B2G, B2C, and C2C customers across offline, online, wholesale,
+            and above-wholesale channels. AL Says has been committed to sustaining the ecosystems aligned with sustainability goals.
+            Guided by our core values, we embrace the mandate of caring for the natural environment,
+            social well-being, and economic development simultaneously.
           </p>
-          <span className="title-lg text-primary">With us, let it be a good moment, we, the All Says, welcome to do business with us!</span>
+          <span className="title-lg text-primary">
+            Thereof, we as a flagship business organization, let this be a good moment for our valuable customers hereof for a {"‘’"}big picture{"’’"} together with AL Says
+          </span>
         </div>
-        <div className="aspect-[412/463] hidden lg:block w-[412px] bg-grey-100 rounded-3xl">
-
+        <div className="aspect-[412/463] hidden relative lg:block w-[412px] bg-grey-100 rounded-3xl">
+          <Image
+            src={AboutLeftImage}
+            alt="About AL Says"
+            fill
+          />
         </div>
       </div>
       <div className="flex flex-col md:flex-row mt-5 md:mt-10 gap-2.5">
         <MissionAndVisionCard
-          description="To Sustain as a Flagship Company on the World Map of Boundaryless Market Ecosystems.  "
+          description="To Sustain as a Flagship Company on the World Map of Boundaryless Market Ecosystems."
           title="Our Vision"
           type="vision"
         />
         <MissionAndVisionCard
-          description="Uprooting through the grassroots changes on the logics for our approaches to businesses interconnecting the ‘’common good’’ with the healthy organizational ecology which fulfil & satisfy the needs of our total stakeholders in a sustainable manner with providing high quality product brands and the best services across diverse industries in line with the principles of sustainability sciences"
+          description="Uprooting from the grassroots, we are reshaping the logic behind our business approaches by interconnecting the “common good” with a healthy organizational ecology. This enables us to fulfil and satisfy the needs of all our stakeholders in a sustainable manner by providing high-quality product brands and the best services across diverse industries, in line with global sustainability goals."
           title="Our Mission"
           type="mission"
         />

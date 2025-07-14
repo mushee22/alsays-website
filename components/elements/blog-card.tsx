@@ -1,20 +1,20 @@
 import { BlogImage } from "@/assets";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 interface Blog {
     title: string;
     createdAt: string;
-    coverImage?: string;
+    coverImage?: StaticImageData | string;
     className?: string;
 }
 
-export default function BlogCard({ title, createdAt, className }: Blog) {
+export default function BlogCard({ title, createdAt, className , coverImage }: Blog) {
     return (
         <Link href={"/blog/1"} className={cn("space-y-3 md:space-y-6", className)}>
             <div className="aspect-[2/1]  w-full bg-primary-700 rounded-3xl relative overflow-hidden">
                 <Image
-                    src={BlogImage}
+                    src={coverImage ?? BlogImage}
                     alt={title}
                     fill
                     className="hover:scale-110 transition-transform duration-500"

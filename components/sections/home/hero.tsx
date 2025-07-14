@@ -1,6 +1,6 @@
 import { GridLayoutBg } from "@/assets"
 import HeroBannerSlider from "@/components/elements/hero-banner-slider"
-import { Button } from "@/components/ui/button"
+import LinkButton from "@/components/ui/link-button"
 import Image from "next/image"
 export default function HeroSection() {
     return (
@@ -9,7 +9,7 @@ export default function HeroSection() {
                 <Image
                     src={GridLayoutBg}
                     alt="Grid Background"
-                    className="absolute"
+                    className="absolute pointer-events-none"
                 />
             </div>
             <div className="container pt-20 md:pt-28">
@@ -21,7 +21,9 @@ export default function HeroSection() {
                         From procurement to project execution, Alsais Trading Co. delivers tailored solutions with <br />
                         unmatched reliability and professionalism.
                     </p>
-                    <Button className="rounded-full font-bold" >Request a Consultation</Button>
+                    <LinkButton href={"/contact-us"}>
+                      Submit an Enquiry
+                    </LinkButton>
                 </div>
 
             </div>

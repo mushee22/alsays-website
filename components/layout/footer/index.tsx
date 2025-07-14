@@ -98,11 +98,11 @@ export default function Footer() {
                         © Al Sais 2025 | All Rights Reserved
                     </span>
                     <div>
-                        <Link href="/privacy-policy" className='text-grey-100 body-sm ml-2'>
+                        <Link href="/privacy-and-policy" className='text-grey-100 body-sm ml-2'>
                             Privacy Policy
                         </Link>
                         <span className='text-grey-100 body-sm mx-2'>|</span>
-                        <Link href="/terms-of-service" className='text-grey-100 body-sm'>
+                        <Link href="/terms-and-conditions" className='text-grey-100 body-sm'>
                             Terms of Service
                         </Link>
                     </div>

@@ -14,9 +14,8 @@ export default function HeroSection() {
             <Container className="flex flex-col justify-end h-full pb-6 sm:pb-12 lg:pb-32  space-y-7">
                 <h1 className="title text-primary max-w-[543px]">AL Say{"'"}s Commitment to Sustainability</h1>
                 <p className="max-w-[543px] text-grey-800 body-md">
-                    At All Says Trading Co., sustainability is integrated into every aspect of our operations.
-                    We are committed to minimizing environmental impact, promoting social responsibility,
-                    and supporting sustainable development across all sectors we serve.
+                    At AL Says Trading Co., sustainability is integrated into every aspect of our operations. 
+                    We are committed to minimizing environmental impact, promoting social responsibility, and supporting sustainable development across all sectors we serve.
                 </p>
             </Container>
         </section>

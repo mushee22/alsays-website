@@ -71,21 +71,27 @@ export default function NavBar() {
 
                         },
                     ],
-                    path:"/product/category"
+                    path: "/product/category"
                 },
                 {
                     title: "FMCG",
                     subMenu: [
                         {
-                            title: "Women & Lady Care Products",
+                            title: "Detergent & Cleaning chemicals",
                         },
                         {
-                            title: "Hygiene Care"
+                            title: "Diapers & Consumables"
+                        },
+                        {
+                            title: "PPE & Safety gear"
+                        },
+                        {
+                            title: "Lab Equipments"
                         }
                     ]
                 },
                 {
-                    title: "Automotive Spare Parts",
+                    title: "Safety Products & Oilfield Equipment",
                     subMenu: [
                         {
                             title: "Light Vehicle Spare Parts",
@@ -98,6 +104,9 @@ export default function NavBar() {
                         {
                             title: "Air Conditioning Parts",
                         },
+                        {
+                            title: "Lubricants & Consumables"
+                        }
                     ],
                 },
                 {
@@ -105,25 +114,98 @@ export default function NavBar() {
                     subMenu: [
                         {
                             title: "A/C Units"
+                        },
+                        {
+                            title: "Heat Exchangers"
+                        },
+                        {
+                            title: "Coils"
+                        },
+                        {
+                            title: "Other HVAC Parts"
                         }
                     ]
                 },
                 {
                     title: "Oilfield Equipment",
                     subMenu: [
-                        { 
-                            title: "Pumps" 
+                        {
+                            title: "Pumps"
+                        },
+                        {
+                            title: "Drilling Items"
+                        },
+                        {
+                            title: "Other Related Equipment"
                         }
                     ]
                 },
                 {
                     title: "Construction Materials",
                     subMenu: [
-                        { 
-                            title: "Steel & Steel Structures" 
+                        {
+                            title: "Steel & Steel Structures",
+                        },
+                        {
+                            title: "Chemicals"
+                        },
+                        {
+                            title: "Other Materials"
+                        }
+
+                    ]
+                },
+                {
+                    title: "Foodstuffs",
+                    subMenu: [
+                        {
+                            title: "Spices"
+                        },
+                        {
+                            title: "Basic Grocery Items"
                         }
                     ]
                 },
+                {
+                    title: "Climate Change & Safe Environmental",
+                    subMenu: [
+                        {
+                            title: "Industrial Safety Products"
+                        },
+                        {
+                            title: "Human Health Products"
+                        },
+                        {
+                            title: "Decarbonisation Products"
+                        },
+                        {
+                            title: "Green Environment Products"
+                        },
+                        {
+                            title: "Other"
+                        }
+                    ]
+                },
+                {
+                    title: "Automotive Parts & Lubricants",
+                    subMenu: [
+                        {
+                            title: "Industrial Safety Products",
+                        },
+                        {
+                            title: "Human Health Products"
+                        },
+                        {
+                            title: "Decarbonisation Products"
+                        },
+                        {
+                            title: "Green Environment Products"
+                        },
+                        {
+                            title: "Other"
+                        }
+                    ]
+                }
             ],
         },
         { title: "Market Presence", path: "/market-presence", id: "MARKET_PRESENCE" },

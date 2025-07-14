@@ -1,6 +1,5 @@
 import { MarketPresenceHeroImage } from "@/assets";
 import Container from "@/components/ui/container";
-import LinkButton from "@/components/ui/link-button";
 import Image from "next/image";
 
 export default function HeroSection() {
@@ -22,7 +21,7 @@ export default function HeroSection() {
                     Alsais Trading Co.
                     delivers expert-managed services that optimize system reliability, reduce downtime, and extend asset life.
                 </p>
-                <LinkButton href="">View Services</LinkButton>
+                {/* <LinkButton href="">View Services</LinkButton> */}
             </div>
             <div className="aspect-[630/497] flex-1 hidden md:block bg-grey-200 relative rounded-3xl overflow-hidden">
                 <Image

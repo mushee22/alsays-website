@@ -26,6 +26,7 @@ export default function OurProductAndServicesSection() {
                             services={productsAndService.services}
                             name={productsAndService.name}
                             key={productsAndService.name + index}
+                            coverImage={productsAndService.coverImage}
                         />
                     ))
                 }

@@ -1,19 +1,36 @@
-import MarkDownContent from "../elements/markdown-content";
 import Container from "../ui/container";
 
 export default function PrivacyAndPolicyPage() {
     return (
         <Container className="max-w-4.5xl md:mt-24 py-12 md:py-24">
             <h1 className="text-grey-900 heading-xl text-center">Privacy and Policy</h1>
-            <div className="mt-6 md:mt-12.5">
-                <MarkDownContent
-                    content={`Lorem ipsum dolor sit amet consectetur. Diam adipiscing amet velit viverra dignissim placerat quis. Nec nisi nisl mauris a in. Hendrerit velit ut et volutpat enim bibendum morbi. Tincidunt aliquet proin cursus sodales diam suspendisse. Fermentum viverra sed quam aliquam nunc lobortis. Duis rhoncus semper magna lacus a vulputate quisque pellentesque enim. Ultrices scelerisque commodo habitant donec morbi maecenas. Imperdiet neque ut aliquet ipsum nunc dignissim tortor. Volutpat in vitae habitant egestas turpis purus tempus.
-
-Lorem ipsum dolor sit amet consectetur. Odio sagittis etiam id augue adipiscing augue molestie nec. Ullamcorper ipsum fringilla ipsum a aenean faucibus penatibus proin massa. Accumsan nisl porttitor purus amet. Et non viverra proin ut felis volutpat et diam gravida. A tristique imperdiet lacus nullam. Commodo maecenas elementum arcu risus cum scelerisque non porta malesuada. Egestas pellentesque facilisis congue lacus. Facilisis venenatis ultricies ante id varius lacus sit amet vel. Aenean diam aliquam diam cursus diam quisque metus. Aenean iaculis leo faucibus risus augue nunc enim massa. Facilisi vestibulum non pellentesque semper. Diam sed sed vulputate fermentum mattis. Ultrices tortor habitant odio in diam pellentesque lacus sollicitudin.
-
-Cras ullamcorper nibh vulputate nisl ut feugiat egestas pharetra purus. Eget fermentum tristique tincidunt sagittis rhoncus purus tortor a. Dictum egestas egestas maecenas quis sed nunc. Vestibulum viverra donec diam fermentum sollicitudin maecenas neque blandit. Ornare massa vel volutpat commodo facilisis amet amet. A pellentesque sit sollicitudin pharetra ut dis. Arcu turpis justo diam faucibus vitae. Velit proin massa amet ut maecenas mi. Lacus in egestas tincidunt velit orci molestie eget. Turpis ut volutpat nisi platea non placerat. Dui leo tellus sollicitudin at. Venenatis in tellus proin at vitae varius nec nunc facilisis. Semper diam quam viverra amet vitae velit aliquet etiam mauris. Feugiat diam morbi est molestie etiam sit euismod posuere. Proin nunc enim et dui at arcu malesuada adipiscing aenean.
-                        `}
-                />
+            <div className="mt-6 md:mt-12.5 text-black">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur. Diam adipiscing amet velit viverra dignissim placerat quis. Nec nisi nisl mauris a in. Hendrerit velit ut et volutpat enim bibendum morbi. Tincidunt aliquet proin cursus sodales diam suspendisse. Fermentum viverra sed quam aliquam nunc lobortis. Duis rhoncus semper magna lacus a vulputate quisque pellentesque enim. Ultrices scelerisque commodo habitant donec morbi maecenas. Imperdiet neque ut aliquet ipsum nunc dignissim tortor. Volutpat in vitae habitant egestas turpis purus tempus.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur. Odio sagittis etiam id augue adipiscing augue molestie nec. Ullamcorper ipsum fringilla ipsum a aenean faucibus penatibus proin massa. Accumsan nisl porttitor purus amet. Et non viverra proin ut felis volutpat et diam gravida. A tristique imperdiet lacus nullam. Commodo maecenas elementum arcu risus cum scelerisque non porta malesuada. Egestas pellentesque facilisis congue lacus. Facilisis venenatis ultricies ante id varius lacus sit amet vel. Aenean diam aliquam diam cursus diam quisque metus. Aenean iaculis leo faucibus risus augue nunc enim massa. Facilisi vestibulum non pellentesque semper. Diam sed sed vulputate fermentum mattis. Ultrices tortor habitant odio in diam pellentesque lacus sollicitudin.
+                    <br/>
+                    Cras ullamcorper nibh vulputate nisl ut feugiat egestas pharetra purus. Eget fermentum tristique tincidunt sagittis rhoncus purus tortor a. Dictum egestas egestas maecenas quis sed nunc. Vestibulum viverra donec diam fermentum sollicitudin maecenas neque blandit. Ornare massa vel volutpat commodo facilisis amet amet. A pellentesque sit sollicitudin pharetra ut dis. Arcu turpis justo diam faucibus vitae. Velit proin massa amet ut maecenas mi. Lacus in egestas tincidunt velit orci molestie eget. Turpis ut volutpat nisi platea non placerat. Dui leo tellus sollicitudin at. Venenatis in tellus proin at vitae varius nec nunc facilisis. Semper diam quam viverra amet vitae velit aliquet etiam mauris. Feugiat diam morbi est molestie etiam sit euismod posuere. Proin nunc enim et dui at arcu malesuada adipiscing aenean.
+                    <br/>
+                    Leo id amet orci duis volutpat dignissim. Massa est a nisi neque ipsum in cursus posuere purus. Molestie auctor interdum scelerisque commodo tempor. Consequat quisque donec id sed arcu venenatis suscipit platea etiam. Phasellus in gravida suspendisse urna sit. Quam nisl placerat nibh tortor. Ut sit suspendisse amet proin consectetur fames eu quam. Volutpat et lacinia sodales senectus lectus. Lorem nibh fermentum pulvinar viverra eu nulla amet. Commodo accumsan cursus dolor enim integer nulla ut ornare dolor. Cursus sollicitudin pretium a facilisis lorem. In consequat at nunc duis sed facilisi bibendum. Viverra placerat enim natoque quam ullamcorper etiam sed.
+                    <br/>
+                    Adipiscing viverra eu euismod cras facilisis nunc ut ac sed. Mi adipiscing et auctor lacus mi orci eget vitae. In enim morbi diam nulla eget tristique tortor lorem lectus. Eget dictum ut tempus placerat. Donec mattis non tellus eget sapien etiam magna duis auctor. Est a tempus vel morbi fermentum lectus. At proin augue non ultricies sit nisi odio integer ipsum. Et nibh neque non morbi nulla pellentesque convallis. Viverra odio donec aenean tincidunt at.
+                    <br/>
+                    Lorem ornare sit nisl massa. Aenean maecenas tellus sed viverra donec proin. Magna et eleifend sed commodo nibh. Ullamcorper dolor augue et elit lectus. Sit lacinia diam diam accumsan. Vel diam mattis commodo consectetur velit id ultricies. Dolor viverra luctus faucibus consectetur ullamcorper mi. Quis eu tellus suspendisse sed nulla cras fames urna. Condimentum id tellus imperdiet leo nunc pellentesque.
+                    <br/>
+                    Et sit pellentesque sociis diam pretium velit. Id ac leo vel nunc hac donec eu pellentesque. Ac urna adipiscing nisi eget feugiat adipiscing. Tincidunt ultrices aliquam ullamcorper massa sed in vulputate viverra. Aenean sed mi donec ultricies nam est vulputate magnis turpis. Rhoncus faucibus suscipit nisi duis diam amet orci vitae a. Nunc sagittis cursus ultrices pharetra purus laoreet morbi pellentesque. Netus imperdiet vulputate et sit nulla pretium. At condimentum orci ornare interdum ac senectus massa integer justo. Donec sed in aliquam at. Risus sit non nibh diam porta et dui. Congue eleifend eu odio amet tellus mi nisi elementum. Penatibus imperdiet tellus amet erat tempor tempor euismod. Egestas a feugiat fermentum neque viverra nibh.
+                    <br/>
+                    Adipiscing urna tortor fermentum massa aliquet congue risus ac. Praesent risus ipsum orci pellentesque amet. Sed dictum elementum sit feugiat est. At quis ornare at ultrices libero dui. Rhoncus et venenatis morbi at integer purus aliquam sed duis. Eu neque in blandit habitant ante et adipiscing. Nunc tempor eu eget mattis id at. In adipiscing at blandit ullamcorper mauris elit. Sit scelerisque massa egestas pretium blandit nulla ornare. Et donec morbi sit venenatis. Venenatis nibh rhoncus neque ridiculus hendrerit maecenas. Id vitae euismod sem dignissim vel. Nullam tellus porttitor tristique id adipiscing congue. Nibh urna turpis lectus sed. Ut accumsan elit et pretium faucibus amet sed ipsum consectetur.
+                    <br/>
+                    Sagittis tellus porttitor imperdiet amet mattis cras non iaculis. Varius elementum odio euismod sed nibh luctus. Congue accumsan in vitae proin ac. Sit enim nunc euismod ut. Semper egestas sodales fusce tortor sit euismod convallis. Turpis id tellus adipiscing enim ornare ut pulvinar netus tincidunt. Arcu nisi ullamcorper ac nibh at elementum proin habitant integer. Ipsum commodo facilisis platea pharetra ac in quam ut cursus. Vitae volutpat ante nam tincidunt maecenas at viverra. Proin suscipit netus odio sit dui in vitae dignissim.
+                    <br/>
+                    Eget lectus fringilla mi etiam tellus dolor. Nec auctor viverra urna viverra dui pulvinar suscipit penatibus quam. Sit non sagittis semper condimentum tortor sit. Tristique tempus id vel maecenas dignissim ut curabitur.
+                </p>
+                {/* <MarkDownContent
+                    content={`
+                        '}
+                /> */}
             </div>
         </Container>
     )

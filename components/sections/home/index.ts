@@ -4,6 +4,7 @@ import HeroSection from "./hero";
 import OurProductAndServicesSection from "./our-products-and-service";
 import ServiceSection from "./service";
 import TrustedBrandsSection from "./trusted-brands";
+import WhatIsNewSection from "./what-is-new";
 import WhatWeAreSection from "./what-we-are";
 
 export {
@@ -12,7 +13,6 @@ export {
     HeroSection,
     OurProductAndServicesSection,
     ServiceSection,
-    TrustedBrandsSection,
-    WhatWeAreSection
+    TrustedBrandsSection, WhatIsNewSection, WhatWeAreSection
 };
 

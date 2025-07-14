@@ -30,7 +30,7 @@ export default function HeroBannerSlider() {
                     {
                     bannerImages.map((image, index) => (
                         <div className="embla__slide" key={index}>
-                            <div className="aspect-[1441/542] min-h-[340px] relative w-full">
+                            <div className="aspect-[1441/542] min-h-[542px] relative w-full">
                                 <Image
                                     src={image}
                                     alt={`Hero Section Image ${index + 1}`}

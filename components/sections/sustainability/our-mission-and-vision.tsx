@@ -8,11 +8,14 @@ export default function OurVisionAndMissionSection() {
         <Container className="py-12 md:py-24">
             <div className="space-y-7 max-w-[1063px]">
                 <h2 className="heading-md text-primary">
-                Our sustainability strategy has been framed by our vision and the mission while synthesized and blended by our core values rooted from and for common good for the good of generations stressing the focuses on three dimensions planet,
-                people, and the stakeholders simultaneously.
+                Our sustainability strategy is guided by our vision and mission and is shaped by our core values, 
+                which are rooted in the idea of serving the greater good for future generations. 
+                It emphasizes three key dimensions: planet, people, and stakeholders, all addressed simultaneously.
             </h2>
             <p className="body-md text-grey-800">
-                At All Says, we intend to achieve this through our processes, high quality products brands and services, and the distribution channels towards the resource- efficient, Zero emission, and the reduced environmental warming future.
+                 At AL Says, we aim to achieve this through our processes, high-quality product brands and services, 
+                 and efficient distribution channels that contribute to a resource-efficient, zero-emission, 
+                 and environmentally sustainable future.
             </p>
             <div className="flex gap-x-2.5 max-md:flex-wrap gap-y-3">
                 {
