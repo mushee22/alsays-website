@@ -1,8 +1,19 @@
 
 import { NewsDetaisPage } from "@/components/pages"
+import { newsService } from "@/service/api"
+import { PageParams } from "@/types"
 
-export default function Page() {
+export async function generateStaticParams() {
+  const { data } = await newsService.find()
+  return data.map((news) => ({
+    slug: news.slug,
+  }))
+}
+
+
+export default async function Page({params}: PageParams) {
+   const { slug } = await params
   return (
-    <NewsDetaisPage/>
+    <NewsDetaisPage slug={slug}/>
   )
 }

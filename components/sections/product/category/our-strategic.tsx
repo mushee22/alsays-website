@@ -3,7 +3,7 @@ import Container from "@/components/ui/container";
 
 export default function OurStrategicSection() {
     return (
-        <Container className="py-12 md:py-24 space-y-7 md:space-y-14">
+        <Container className="pb-12 md:pb-24 space-y-7 md:space-y-14">
             <h2 className="text-primary text-center heading-md max-w-[832px] mx-auto">
                 Explore cutting-edge tools for efficient finance management and strategic insights.
             </h2>

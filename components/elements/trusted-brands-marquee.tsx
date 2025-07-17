@@ -1,79 +1,47 @@
-import {
-    BrandImageEight,
-    BrandImageEleven,
-    BrandImageFive,
-    BrandImageFour,
-    BrandImageNine,
-    BrandImageOne,
-    BrandImageSeven,
-    BrandImageSix,
-    BrandImageTen,
-    BrandImageThree,
-    BrandImageTwelve,
-    BrandImageTwo,
-} from "@/assets";
+import { trustedPartnersService } from "@/service/api";
 import Image, { StaticImageData } from "next/image";
 import Marquee from "react-fast-marquee";
 
+export default async function TrustedBrandMarquee() {
 
-const trustedBrands = [
-    BrandImageOne,
-    BrandImageTwo,
-    BrandImageThree,
-    BrandImageFour,
-    BrandImageFive,
-    BrandImageSix,
-    BrandImageSeven,
-    BrandImageEight,
-    BrandImageNine,
-    BrandImageTen,
-    BrandImageEleven,
-    BrandImageTwelve    
-]
+    const { data: brands = [] } = await trustedPartnersService.find({
+        populate: {
+            logo: true
+        }
+    });
 
-export default function TrustedBrandMarquee() {
+    
+
     return (
-        <Marquee gradient autoFill
-        
-        >
+        <Marquee gradient autoFill>
             {
-                trustedBrands.map((brand, index) => (
+                brands.map((brand, index) => (
                     <MarqueeItem
                         key={index}
-                        src={brand}
+                        src={brand.logo?.url ?? ""}
+                        alt={brand.title ?? 'Trusted Brand Logo'}
                     />
                 ))
             }
-            {/* <MarqueeItem 
-             src={ClientLogoOneImage}
-            />
-            <MarqueeItem 
-             src={ClientLogoTwoImage}
-            />
-            <MarqueeItem 
-             src={ClientLogoThreeImage}
-            />
-            <MarqueeItem 
-             src={ClientLogoOneImage}
-            />
-            <MarqueeItem 
-             src={ClientLogoThreeImage}
-            /> */}
-
         </Marquee>
     )
 }
 
 
-function MarqueeItem({src }: { src: string | StaticImageData }) {
+function MarqueeItem({ src }: { src: string | StaticImageData, alt?: string }) {
+
+    if (!src) {
+        return null;
+    }
+
     return (
         <div className="aspect-[260/80] h-[80px] relative max-w-[320px]">
             <Image
-            src={src}
-            alt="Client Image"
-            fill
-            className="object-contain"
-        />
+                src={src}
+                alt="Client Image"
+                fill
+                className="object-contain"
+            />
         </div>
     )
 }

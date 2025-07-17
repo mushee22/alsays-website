@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 import { useMemo } from "react";
 
 import { useNavigation } from "@/hooks/use-navigation";
+import { Category } from "@/types";
 import { Menu, X } from "lucide-react";
 import MegaMenu from "./mega-menu";
 import MenuItem from "./menu-item";
@@ -21,7 +22,7 @@ interface Menu {
     id: string
 }
 
-export default function NavBar() {
+export default function NavBar({ categories } : { categories?: Category[] }) {
 
     const {
         isMobileMenuOpen,
@@ -34,7 +35,24 @@ export default function NavBar() {
     } = useNavigation();
 
 
-    const MENU_DATA: Menu[] = useMemo(() => [
+    const MENU_DATA: Menu[] = useMemo(() =>{
+
+        const productAndServicesMenu = categories?.map((category) => {
+            return {
+                title: category.name ?? "",
+                path: `/product/${category.slug}`,
+                subMenu: category.subCategories?.map((subCategory) => {
+                    return {
+                        title: subCategory.name ?? "",
+                        path: `/product/${category.slug}/${subCategory.slug}`,
+                    }
+                })
+            }
+        })
+
+       
+
+        return  [
         {
             title: "About Us",
             path: "/about-us",
@@ -43,170 +61,7 @@ export default function NavBar() {
         {
             title: "Products & Services",
             id: "PRODUCT_AND_SERVICES",
-            subMenu: [
-                {
-                    title: "Flooring Mats",
-                    subMenu: [
-                        {
-                            title: "Rubber Mats",
-                            subMenu: [
-                                {
-                                    title: "Gym Mats",
-                                },
-                                {
-                                    title: "Swimming Pool Mats"
-                                },
-                                {
-                                    title: "Stable Mats"
-                                }
-                            ],
-
-                        },
-                        {
-                            title: "Industrial Mats",
-
-                        },
-                        {
-                            title: "PP Mats",
-
-                        },
-                    ],
-                    path: "/product/category"
-                },
-                {
-                    title: "FMCG",
-                    subMenu: [
-                        {
-                            title: "Detergent & Cleaning chemicals",
-                        },
-                        {
-                            title: "Diapers & Consumables"
-                        },
-                        {
-                            title: "PPE & Safety gear"
-                        },
-                        {
-                            title: "Lab Equipments"
-                        }
-                    ]
-                },
-                {
-                    title: "Safety Products & Oilfield Equipment",
-                    subMenu: [
-                        {
-                            title: "Light Vehicle Spare Parts",
-
-                        },
-                        {
-                            title: "Heavy Duty Spare Parts",
-
-                        },
-                        {
-                            title: "Air Conditioning Parts",
-                        },
-                        {
-                            title: "Lubricants & Consumables"
-                        }
-                    ],
-                },
-                {
-                    title: "HVAC Spare Parts",
-                    subMenu: [
-                        {
-                            title: "A/C Units"
-                        },
-                        {
-                            title: "Heat Exchangers"
-                        },
-                        {
-                            title: "Coils"
-                        },
-                        {
-                            title: "Other HVAC Parts"
-                        }
-                    ]
-                },
-                {
-                    title: "Oilfield Equipment",
-                    subMenu: [
-                        {
-                            title: "Pumps"
-                        },
-                        {
-                            title: "Drilling Items"
-                        },
-                        {
-                            title: "Other Related Equipment"
-                        }
-                    ]
-                },
-                {
-                    title: "Construction Materials",
-                    subMenu: [
-                        {
-                            title: "Steel & Steel Structures",
-                        },
-                        {
-                            title: "Chemicals"
-                        },
-                        {
-                            title: "Other Materials"
-                        }
-
-                    ]
-                },
-                {
-                    title: "Foodstuffs",
-                    subMenu: [
-                        {
-                            title: "Spices"
-                        },
-                        {
-                            title: "Basic Grocery Items"
-                        }
-                    ]
-                },
-                {
-                    title: "Climate Change & Safe Environmental",
-                    subMenu: [
-                        {
-                            title: "Industrial Safety Products"
-                        },
-                        {
-                            title: "Human Health Products"
-                        },
-                        {
-                            title: "Decarbonisation Products"
-                        },
-                        {
-                            title: "Green Environment Products"
-                        },
-                        {
-                            title: "Other"
-                        }
-                    ]
-                },
-                {
-                    title: "Automotive Parts & Lubricants",
-                    subMenu: [
-                        {
-                            title: "Industrial Safety Products",
-                        },
-                        {
-                            title: "Human Health Products"
-                        },
-                        {
-                            title: "Decarbonisation Products"
-                        },
-                        {
-                            title: "Green Environment Products"
-                        },
-                        {
-                            title: "Other"
-                        }
-                    ]
-                }
-            ],
+            subMenu: productAndServicesMenu
         },
         { title: "Market Presence", path: "/market-presence", id: "MARKET_PRESENCE" },
         { title: "Sustainability", path: "/sustainability", id: "SUSTAINABILITY" },
@@ -218,13 +73,14 @@ export default function NavBar() {
                 { title: "News & Publications", path: "/news" },
             ],
         },
-    ], []);
+    ]
+    }, [categories]);
 
     const open = !!activeSubmenuId
 
     const activeMenu = MENU_DATA.find((item) => item.id === activeSubmenuId)
 
-    // console.log(open, "open")
+    
 
     return (
         <>

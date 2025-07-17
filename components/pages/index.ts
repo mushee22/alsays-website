@@ -11,6 +11,7 @@ import NewsDetaisPage from "./news/details";
 import PrivacyAndPolicyPage from "./privacy-and-policy";
 import ProductPage from "./product";
 import CategoryPage from "./product/category";
+import SubCategoryPage from "./product/sub-category";
 import SustainabilityPage from "./sustainability";
 import TermsAndConditionPage from "./terms-and-conditions";
 
@@ -28,6 +29,7 @@ export {
     NewsPage,
     PrivacyAndPolicyPage,
     ProductPage,
+    SubCategoryPage,
     SustainabilityPage,
     TermsAndConditionPage
 };

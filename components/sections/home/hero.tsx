@@ -1,8 +1,16 @@
 import { GridLayoutBg } from "@/assets"
 import HeroBannerSlider from "@/components/elements/hero-banner-slider"
 import LinkButton from "@/components/ui/link-button"
+import { homeBannerService } from "@/service/api"
 import Image from "next/image"
-export default function HeroSection() {
+export default async function HeroSection() {
+
+    const { data: banners = [] } = await homeBannerService.find({
+        populate: {
+            image: true
+        }
+    })
+
     return (
         <section className="section-spacing  lg:pt-28">
             <div className="absolute container hidden md:block left-1/2 -top-0 -translate-x-1/2 px-6">
@@ -22,12 +30,12 @@ export default function HeroSection() {
                         unmatched reliability and professionalism.
                     </p>
                     <LinkButton href={"/contact-us"}>
-                      Submit an Enquiry
+                        Submit an Enquiry
                     </LinkButton>
                 </div>
 
             </div>
-            <HeroBannerSlider/>
+            <HeroBannerSlider banners={banners}/>
         </section>
     )
 }

@@ -2,9 +2,21 @@ import BlogCard from '@/components/elements/blog-card'
 import Container from '@/components/ui/container'
 import LinkButton from '@/components/ui/link-button'
 
-import { BlogImageOne, BlogImageThree, BlogImageTwo } from "@/assets"
+import { blogService } from '@/service/api'
 
-export default function WhatIsNewSection() {
+export default async function WhatIsNewSection() {
+  
+    const { data: latestBlogs = [] } =  await blogService.find({
+        populate: {
+            cover: true,
+        },
+        limit: 3,
+    })
+
+    if (latestBlogs.length === 0) {
+        return null;
+    }
+
     return (
         <Container className="section-spacing">
             <div className='flex  justify-between'>
@@ -12,24 +24,15 @@ export default function WhatIsNewSection() {
                 <LinkButton href={"/blog"}>Read More</LinkButton>
             </div>
             <div className="grid  md:grid-cols-3 gap-5 mt-5 md:mt-10">
-                <BlogCard
-                    createdAt="February 18, 2025"
-                    title="Coming soon! New updates & features for Ionic’s Open Source projects"
-                    className="**:data-title:text-lg"
-                    coverImage={BlogImageOne}
-                />
-                <BlogCard
-                    createdAt="February 18, 2025"
-                    title="Coming soon! New updates & features for Ionic’s Open Source projects"
-                    className="**:data-title:text-lg"
-                    coverImage={BlogImageTwo}
-                />
-                <BlogCard
-                    createdAt="February 18, 2025"
-                    title="Coming soon! New updates & features for Ionic’s Open Source projects"
-                    className="**:data-title:text-lg"
-                    coverImage={BlogImageThree}
-                />
+                {
+                    latestBlogs.map((blog, index) => (
+                        <BlogCard
+                            key={index}
+                            {...blog}
+                        />
+                    ))
+                }
+                
             </div>
         </Container>
     )

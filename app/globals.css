@@ -273,7 +273,7 @@
     @apply text-primary text-2xl leading-7 md:text-4.5xl font-bold md:leading-11
   }
 
-  .required {
+  .required-label {
     @apply after:content-['*'] after:text-primary
   }
 

@@ -1,16 +1,14 @@
+import { CareerOpening } from "@/types";
 import Link from "next/link";
 import { Button } from "../ui/button";
 
-interface Career {
-    name: string;
-    type?: string;
-}
 
-export default function CareerCard({ name, type }: Career) {
+
+export default function CareerCard({ positionName, locationType, slug }: CareerOpening) {
     return (
-        <Link href={""} className="flex flex-col gap-y-2 sm:flex-row max-md:border border-secondary max-md:p-3 max-md:rounded-2xl items-start md:items-center gap-x-3">
-            <p className="title-lg flex-1">{name}</p>
-            <p className="body-lg md:flex-1">{type}</p>
+        <Link href={`/career/${slug}`} className="flex flex-col gap-y-2 hover:bg-white/5  sm:flex-row max-md:border border-secondary max-md:p-3 p-2 rounded-2xl max-md:rounded-2xl items-start md:items-center gap-x-3">
+            <p className="title-lg flex-1">{positionName}</p>
+            <p className="body-lg md:flex-1">{locationType}</p>
             <Button  variant="secondary" className="[&_path]:fill-primary md:hidden">View</Button>
             <div className="hidden md:inline">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

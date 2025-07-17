@@ -1,5 +1,6 @@
 'use client'
-import { BannerImageFive, BannerImageFour, BannerImageOne, BannerImageSeven, BannerImageSix, BannerImageThree, BannerImageTwo } from '@/assets'
+import { getStrapiImageURL } from '@/lib/config'
+import { HomeBenner } from '@/types'
 import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel, { type UseEmblaCarouselType, } from 'embla-carousel-react'
 import Image from 'next/image'
@@ -8,17 +9,18 @@ import { useCallback, useEffect, useState } from 'react'
 
 type CarouselApi = UseEmblaCarouselType[1];
 
-const bannerImages = [
-    BannerImageOne,
-    BannerImageTwo,
-    BannerImageThree,
-    BannerImageFour,
-    BannerImageFive,
-    BannerImageSix,
-    BannerImageSeven
-]
+// const bannerImages = [
+//     BannerImageOne,
+//     BannerImageTwo,
+//     BannerImageThree,
+//     BannerImageFour,
+//     BannerImageFive,
+//     BannerImageSix,
+//     BannerImageSeven
+// ]
 
-export default function HeroBannerSlider() {
+export default function HeroBannerSlider({ banners = [] }:{ banners: HomeBenner[] }) {
+    
     const [emblaRef] = useEmblaCarousel({ loop: true, axis: 'y' }, [Autoplay({
         delay: 3000
     })])
@@ -28,12 +30,12 @@ export default function HeroBannerSlider() {
             <div className="embla__viewport" ref={emblaRef}>
                 <div className="embla__container">
                     {
-                    bannerImages.map((image, index) => (
+                    banners.map((banner, index) => (
                         <div className="embla__slide" key={index}>
                             <div className="aspect-[1441/542] min-h-[542px] relative w-full">
                                 <Image
-                                    src={image}
-                                    alt={`Hero Section Image ${index + 1}`}
+                                    src={getStrapiImageURL(banner.image?.url ) ?? ""}
+                                    alt={banner?.altText ?? 'Banner Image'}
                                     fill
                                     className='object-cover'
                                 />

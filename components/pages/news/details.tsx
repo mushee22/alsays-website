@@ -1,12 +1,24 @@
-import { NewsContentSection, NewsDetailsHeroSection, } from "@/components/sections/news"
-export default function DetailsPage() {
+import { NewsContentSection, NewsDetailsHeroSection, } from "@/components/sections/news";
+import { newsService } from "@/service/api";
+export default async function DetailsPage({ slug }: { slug: string }) {
+
+    const { data: news } = await newsService.findBySlug(slug, {
+        populate: {
+            cover: true,
+        }
+    }
+    )
+
+    const { createdAt, title, cover, content } = news[0] || {};
+
     return (
         <>
             <NewsDetailsHeroSection
-                createdAt="February 18, 2025"
-                title="Coming soon! New updates & features for Ionic’s Open Source projects"
+                createdAt={createdAt}
+                title={title}
+                cover={cover?.url || ""}
             />
-            <NewsContentSection/>
+            <NewsContentSection content={content}/>
         </>
     )
 }

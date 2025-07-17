@@ -1,5 +1,15 @@
 import { BlogDetailsPage } from "@/components/pages"
+import { blogService } from "@/service/api"
+import { PageParams } from "@/types"
 
-export default function page() {
-  return (<BlogDetailsPage/>)
+export async function generateStaticParams() {
+  const { data } = await blogService.find()
+  return data.map((blog) => ({
+    slug: blog.slug,
+  }))
+}
+
+export default async function page({params}: PageParams) {
+  const { slug } = await params
+  return (<BlogDetailsPage slug={slug} />)
 }

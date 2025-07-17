@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Flooring Mats",
+        "type": "CATEGORY",
+        "description": "Flooring mats are protective and decorative coverings placed on floors to enhance comfort, safety, and cleanliness. They come in various materials like rubber, vinyl, fabric, or foam, and are used in homes, gyms, offices, vehicles, and industrial settings. Flooring mats help prevent slips, reduce wear on flooring, absorb moisture and dirt, and add aesthetic value to the space.",
+        "image": "",
+        "children": [
+            {
+                "name": "Rubber Mats",
+                "type": "CATEGORY",
+                "description": "",
+                "image": "",
+                "parents": "Flooring Mats"
+            },
+            {
+                "name": "Industrial Mats",
+                "type": "CATEGORY",
+                "description": "",
+                "image": ""
+            },
+            {
+                "name": "PP Mats",
+                "type": "CATEGORY",
+                "description": "",
+                "image": ""
+            },
+            {
+                "name": "PP Mats",
+                "type": "CATEGORY",
+                "description": "",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "CATEGORY",
+        "description": "",
+        "image": "",
+        "children": [
+            {
+                "name": "",
+                "type": "CATEGORY",
+                "description": "",
+                "image": ""
+            },
+            {
+                "name": "",
+                "type": "CATEGORY",
+                "description": "",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "name": "",
+        "type": "CATEGORY",
+        "description": "",
+        "image": ""
+    },
+    {
+        "name": "",
+        "type": "CATEGORY",
+        "description": "",
+        "image": ""
+    },
+    {
+        "name": "",
+        "type": "CATEGORY",
+        "description": "",
+        "image": ""
+    },
+    {
+        "name": "",
+        "type": "CATEGORY",
+        "description": "",
+        "image": ""
+    },
+    {
+        "name": "",
+        "type": "CATEGORY",
+        "description": "",
+        "image": ""
+    },
+    {
+        "name": "",
+        "type": "CATEGORY",
+        "description": "",
+        "image": ""
+    },
+    {
+        "name": "",
+        "type": "CATEGORY",
+        "description": "",
+        "image": ""
+    }
+    
+]

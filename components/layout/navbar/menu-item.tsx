@@ -3,7 +3,7 @@ import { MenuItemProps } from "@/types";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import Link from "next/link";
 
-export default function MenuItem({ item, isActive = false, onHover, onClick, level = 0, className = '' }: MenuItemProps) {
+export default function MenuItem({ item, path, isActive = false, onHover, onClick, level = 0, className = '' }: MenuItemProps) {
 
     const hasSubmenu = item.subMenu && item.subMenu.length > 0;
 
@@ -29,7 +29,7 @@ export default function MenuItem({ item, isActive = false, onHover, onClick, lev
             className={cn('px-4 py-2 flex gap-x-1 items-center cursor-pointer', className)}
             key={item.id}
             onClick={handleOnMouseClick}
-            href={ level == 0  ? '' : '/product/category/category'}
+            href={ path || ""}
             onMouseEnter={handleOnMouseEnter}
         >
             <span className={cn("title-sm  hover:text-primary", isActive ? 'text-primary' : 'text-grey-800')}>{item.title}</span>

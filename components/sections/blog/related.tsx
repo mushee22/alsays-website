@@ -1,12 +1,10 @@
-import { BlogImageOne, BlogImageThree, BlogImageTwo } from "@/assets";
-import BlogCard from "@/components/elements/blog-card";
 import Container from "@/components/ui/container";
 
 export default function RelatedBlogsListSection() {
   return (
     <Container className="section-spacing">
         <h3 className="text-primary heading-md">Related blogs</h3>
-        <div className="grid  md:grid-cols-3 gap-5 mt-5 md:mt-10">
+        {/* <div className="grid  md:grid-cols-3 gap-5 mt-5 md:mt-10">
             <BlogCard 
              createdAt="February 18, 2025"
              title="Coming soon! New updates & features for Ionic’s Open Source projects"
@@ -25,7 +23,7 @@ export default function RelatedBlogsListSection() {
              className="**:data-title:text-lg"
              coverImage={BlogImageThree}
             />
-        </div>
+        </div> */}
     </Container>
   )
 }

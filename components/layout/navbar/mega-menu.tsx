@@ -24,7 +24,7 @@ export default function MegaMenu({ isOpen, show, activeMenu, hoveredItemId, onIt
                 "max-w-7xl mx-auto absolute  max-lg:hidden top-full left-1/2 -translate-x-1/2 z-20 w-full p-6 bg-white border border-gray-100 rounded-b-2xl shadow-lg transition-all duration-300 overflow-hidden",
                 (isOpen && show) ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none",
             )}
-            style={{ height: isOpen ? "420px" : "0" }}
+            style={{ height: isOpen ? "400px" : "0" }}
         >
             <div className="flex h-full  text-primary">
                 <div className="flex-1 space-y-1">
@@ -36,6 +36,7 @@ export default function MegaMenu({ isOpen, show, activeMenu, hoveredItemId, onIt
                                 onHover={onItemHover}
                                 level={1}
                                 className='w-full justify-between hover:text-primary hover:bg-[#E0E0E066] rounded-2xl'
+                                path={subMenuItem.path || ''}
                             />
                         </div>
                     ))}
@@ -48,6 +49,7 @@ export default function MegaMenu({ isOpen, show, activeMenu, hoveredItemId, onIt
                                 item={item}
                                 level={2}
                                 className='w-full justify-between peer hover:text-primary hover:bg-[#E0E0E066] rounded-2xl'
+                                path={item.path || ''}
                             />
                             {item.subMenu && (
                                 <div className="pl-4 pt-1  opacity-0 h-0 hover:h-auto hover:opacity-100 overflow-hidden peer-hover:h-auto peer-hover:opacity-100 transition-opacity duration-200">
@@ -56,6 +58,7 @@ export default function MegaMenu({ isOpen, show, activeMenu, hoveredItemId, onIt
                                             key={`sub-${subIndex}`}
                                             item={subItem} level={3}
                                             className=''
+                                            path={subItem.path || ''}
                                         />
                                     ))}
                                 </div>

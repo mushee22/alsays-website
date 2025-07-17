@@ -1,13 +1,25 @@
-import { BlogDetailsHeroSection, ContentSection, RelatedBlogsListSection } from "@/components/sections/blog"
-export default function DetailsPage() {
+import { BlogDetailsHeroSection, ContentSection } from "@/components/sections/blog";
+import { blogService } from "@/service/api";
+export default async function DetailsPage({ slug }: { slug: string }) {
+
+    const { data: blog } = await blogService.findBySlug(slug, {
+        populate: {
+            cover: true,
+        }
+    }
+    )
+
+    const { createdAt, title, cover, content } = blog[0] || {};
+
     return (
         <>
             <BlogDetailsHeroSection
-                createdAt="February 18, 2025"
-                title="Coming soon! New updates & features for Ionic’s Open Source projects"
+                createdAt={createdAt}
+                title={title}
+                cover={cover?.url || ""}
             />
-            <ContentSection/>
-            <RelatedBlogsListSection/>
+            <ContentSection content={content}/>
+            {/* <RelatedBlogsListSection /> */}
         </>
     )
 }

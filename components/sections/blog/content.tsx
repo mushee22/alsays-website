@@ -22,7 +22,7 @@ Suspendisse in habitasse morbi in id. Vitae orci non euismod ultrices tempor ege
 Sed nunc nulla nibh blandit nisl iaculis velit velit metus. Sit nisl interdum eu euismod cursus lacus ac lobortis libero. Tortor lorem mauris pretium ac. Faucibus at sit sit in leo sagittis mauris non in. Dignissim condimentum id rhoncus ut. Ipsum pellentesque leo ultricies scelerisque nisl a lorem. Mattis sed nisl velit nulla est amet integer. Lacus arcu amet vel viverra eu.
 `
 
-export default function ContentSection() {
+export default function ContentSection({ content }:{content?: string}) {
     return (
         <Container className="max-w-5xl flex flex-col md:flex-row relative section-spacing  mt-5 md:mt-10 text-grey-800">
             <div className=" max-md:sticky top-[120px] md:mt-10 mb-5 max-md:self-end">
@@ -32,7 +32,7 @@ export default function ContentSection() {
             </div>
             <div className="px-3 md:px-6 lg:px-12">
                 <MarkDownContent
-                    content={markdown}
+                    content={content ?? ""}
                 />
             </div>
         </Container>
