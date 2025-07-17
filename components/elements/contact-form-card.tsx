@@ -35,7 +35,7 @@ export default function ContactFormCard() {
                     },
                     body: JSON.stringify({
                         data: {
-                            firsName: values.first_name,
+                            firstName: values.first_name,
                             lastName: values.last_name,
                             email: values.email,
                             message: values.message,
