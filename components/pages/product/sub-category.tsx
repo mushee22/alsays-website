@@ -1,35 +1,14 @@
 
-import { ContactBannerSection, HeroSection, OurStrategicSection, ProductSection, TrustedBrandsSection, WhyChooseUsSection } from "@/components/sections/product/category";
-import { subCategoryService } from "@/service/api";
+import { ContactBannerSection, SubCategoryDynamicSection, TrustedBrandsSection, WhyChooseUsSection } from "@/components/sections/product/category";
+import SubcategoryPageFallBack from "@/components/shimmer/sub-category";
+import { Suspense } from "react";
 
 export default async function SubCategoryPage({ slug = '' }: { slug?: string }) {
-
-    const { data } = await subCategoryService.findBySlug(slug, {
-        populate: {
-            image: true,
-            category: true,
-            products: {
-                populate: {
-                    image: true,
-                }
-            }
-        }
-    });
-
-    const subCategory = data?.[0];
-
     return (
         <>
-            <HeroSection
-                name={subCategory?.name}
-                description={subCategory?.description}
-                image={subCategory?.image}
-                categoryName={subCategory?.category?.name}
-            />
-            <OurStrategicSection />
-            {
-                subCategory?.products && subCategory?.products.length > 0 && <ProductSection products={subCategory.products}/>
-            }
+            <Suspense fallback={<SubcategoryPageFallBack />}>
+                <SubCategoryDynamicSection slug={slug} />
+            </Suspense>
             <WhyChooseUsSection />
             <TrustedBrandsSection />
             <ContactBannerSection />

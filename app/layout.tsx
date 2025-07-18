@@ -13,8 +13,20 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: "Al Says Trading & Contracting",
-  description: "Comprehensive Trading & Contracting Solutions Under One Roof",
+  description: "Alsais Trading provides high-quality industrial materials, oilfield equipment, safety products, and construction materials in Saudi Arabia.",
+  keywords: [
+    "Alsais Trading",
+    "Saudi Arabia",
+    "oilfield equipment",
+    "industrial supplies",
+    "safety materials",
+    "construction materials",
+    "automotive parts",
+    "electrical supplies",
+  ],
 };
+
+
 
 export default function RootLayout({
   children,

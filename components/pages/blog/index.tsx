@@ -1,6 +1,7 @@
 import { BlogListSection, LatestBlogSection } from "@/components/sections/blog";
 import { blogService } from "@/service/api";
 
+
 export default async function BlogPage() {
 
   const { data: blogs = [] } = await blogService.find({

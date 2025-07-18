@@ -2,7 +2,7 @@ import ProductCard from "@/components/elements/product-card";
 import Container from "@/components/ui/container";
 import { Product } from "@/types";
 
-export default function ProductSection({ products }: { products: Product[] }) {
+export default async function ProductSection({ products }: { products: Product[] }) {
   return (
     <Container className="pb-12 md:pb-24 space-y-6 md:space-y-14">
       <h2 className="heading-md text-primary text-center">Products</h2>

@@ -1,6 +1,6 @@
 import Container from "../ui/container";
 
-export default function ProductPageLoadingShimmer() {
+export default function SubcategoryPageFallBack() {
     return (
         <>
             <Container className="py-12 md:py-24 md:mt-12">
@@ -19,68 +19,43 @@ export default function ProductPageLoadingShimmer() {
                         <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
                         <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
                     </div>
-                    <div className="grid min-[420px]:grid-cols-2 md:grid-cols-3 gap-3 md:gap-5 mt-10">
-                        <div className="flex flex-col gap-y-2">
-                            <div className="aspect-square w-full animate-pulse bg-grey-100"></div>
-                            <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
-                            <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
-                        </div>
-                        <div className="flex flex-col gap-y-2">
-                            <div className="aspect-square w-full animate-pulse bg-grey-100"></div>
-                            <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
-                            <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
-                        </div>
-                        <div className="flex flex-col gap-y-2">
-                            <div className="aspect-square w-full animate-pulse bg-grey-100"></div>
-                            <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
-                            <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
-                        </div>
-                    </div>
-                </Container>
-            </section>
-            <section className="py-12 md:py-24 mb-12 md:mb-24 bg-[#F7F8F6] max-w-screen">
-                <Container className="">
-                    <div className="flex flex-col justify-center">
-                        <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
-                        <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
-                    </div>
                     <div className="grid min-[420px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5 mt-10">
                         <div className="flex flex-col gap-y-2">
                             <div className="aspect-square w-full animate-pulse bg-grey-100"></div>
                             <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
                             <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
                         </div>
-                         <div className="flex flex-col gap-y-2">
+                        <div className="flex flex-col gap-y-2">
                             <div className="aspect-square w-full animate-pulse bg-grey-100"></div>
                             <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
                             <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
                         </div>
-                         <div className="flex flex-col gap-y-2">
+                        <div className="flex flex-col gap-y-2">
                             <div className="aspect-square w-full animate-pulse bg-grey-100"></div>
                             <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
                             <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
                         </div>
-                         <div className="flex flex-col gap-y-2">
+                        <div className="flex flex-col gap-y-2">
                             <div className="aspect-square w-full animate-pulse bg-grey-100"></div>
                             <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
                             <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
                         </div>
-                         <div className="flex flex-col gap-y-2">
+                        <div className="flex flex-col gap-y-2">
                             <div className="aspect-square w-full animate-pulse bg-grey-100"></div>
                             <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
                             <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
                         </div>
-                         <div className="flex flex-col gap-y-2">
+                        <div className="flex flex-col gap-y-2">
                             <div className="aspect-square w-full animate-pulse bg-grey-100"></div>
                             <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
                             <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
                         </div>
-                         <div className="flex flex-col gap-y-2">
+                        <div className="flex flex-col gap-y-2">
                             <div className="aspect-square w-full animate-pulse bg-grey-100"></div>
                             <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
                             <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
                         </div>
-                         <div className="flex flex-col gap-y-2">
+                        <div className="flex flex-col gap-y-2">
                             <div className="aspect-square w-full animate-pulse bg-grey-100"></div>
                             <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
                             <div className="py-2 w-[200px] bg-grey-100 animate-pulse"></div>
