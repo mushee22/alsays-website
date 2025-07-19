@@ -1,5 +1,5 @@
 import { CareerDetailPage } from "@/components/pages"
-import { careerService } from "@/service/api"
+import { careerService } from "@/service/strapi"
 import { PageParams } from "@/types"
 
 export async function generateStaticParams() {

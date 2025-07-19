@@ -7,8 +7,6 @@ export default async function Page({ params }: { params: Promise<{ slug: string[
     return notFound();
   }
 
-
-
   if (slug.length == 1) {
     return <CategoryPage slug={slug[0]} />
   }
@@ -17,5 +15,5 @@ export default async function Page({ params }: { params: Promise<{ slug: string[
     return <SubCategoryPage slug={slug[1]} />;
   }
 
-  return (<ProductPage />)
+  return (<ProductPage slug={slug[2]} />)
 }

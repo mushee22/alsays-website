@@ -2,7 +2,7 @@ import BlogCard from '@/components/elements/blog-card'
 import Container from '@/components/ui/container'
 import LinkButton from '@/components/ui/link-button'
 
-import { blogService } from '@/service/api'
+import { blogService } from '@/service/strapi'
 
 export default async function WhatIsNewSection() {
   

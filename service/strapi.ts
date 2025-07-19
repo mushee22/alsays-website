@@ -1,8 +1,8 @@
 import { strapiClient } from "@/lib/config";
-import { Blog, Brand, CareerOpening, Category, HomeBenner, NewsAndPublication, StrapiCollectionResponse, SubCategory } from "@/types";
+import { Blog, Brand, CareerOpening, Category, HomeBenner, NewsAndPublication, Product, StrapiCollectionResponse, SubCategory } from "@/types";
 import { CollectionTypeManager } from "@strapi/client";
 
-class StrapiService<T> {
+export class StrapiService<T> {
     private instance: CollectionTypeManager;
     private collectionName: string;
 
@@ -22,7 +22,7 @@ class StrapiService<T> {
         }
     }
 
-    async findById(id: string, filters?: Record<string, any>) : Promise<T> {
+    async findById(id: string, filters?: Record<string, any>): Promise<T> {
         try {
             const response = await this.instance.findOne(id, filters);
             return response?.data as T;
@@ -32,10 +32,10 @@ class StrapiService<T> {
         }
     }
 
-    async findBySlug(slug: string, filters?: Record<string, any>): Promise<StrapiCollectionResponse<T[]>> { 
+    async findBySlug(slug: string, filters?: Record<string, any>): Promise<StrapiCollectionResponse<T[]>> {
         try {
             const response = await this.instance.find({
-                filters: { slug: { $eq: slug }  },
+                filters: { slug: { $eq: slug } },
                 ...filters,
             });
             return response as StrapiCollectionResponse<T[]>;
@@ -43,7 +43,7 @@ class StrapiService<T> {
             console.error(`Error fetching data from ${this.collectionName} by slug:`, error);
             throw error;
         }
-    }   
+    }
 
 }
 
@@ -54,7 +54,17 @@ const trustedPartnersService = new StrapiService<Brand>('trusted-brands');
 const homeBannerService = new StrapiService<HomeBenner>('home-banners');
 const careerService = new StrapiService<CareerOpening>('careers');
 const categoryService = new StrapiService<Category>('categories');
-const subCategoryService = new StrapiService<SubCategory>('sub-categories')
+const subCategoryService = new StrapiService<SubCategory>('sub-categories');
+const productService = new StrapiService<Product>('products');
 
-export { blogService, careerService, categoryService, homeBannerService, newsService, subCategoryService, trustedPartnersService };
+export {
+    blogService,
+    careerService,
+    categoryService,
+    homeBannerService,
+    newsService,
+    productService,
+    subCategoryService,
+    trustedPartnersService
+};
 

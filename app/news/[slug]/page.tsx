@@ -1,6 +1,6 @@
 
 import { NewsDetaisPage } from "@/components/pages"
-import { newsService } from "@/service/api"
+import { newsService } from "@/service/strapi"
 import { PageParams } from "@/types"
 
 export async function generateStaticParams() {

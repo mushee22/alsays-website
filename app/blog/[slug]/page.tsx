@@ -1,5 +1,5 @@
 import { BlogDetailsPage } from "@/components/pages"
-import { blogService } from "@/service/api"
+import { blogService } from "@/service/strapi"
 import { PageParams } from "@/types"
 
 export async function generateStaticParams() {

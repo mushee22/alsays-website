@@ -6,18 +6,7 @@ import useEmblaCarousel, { type UseEmblaCarouselType, } from 'embla-carousel-rea
 import Image from 'next/image'
 import { useCallback, useEffect, useState } from 'react'
 
-
 type CarouselApi = UseEmblaCarouselType[1];
-
-// const bannerImages = [
-//     BannerImageOne,
-//     BannerImageTwo,
-//     BannerImageThree,
-//     BannerImageFour,
-//     BannerImageFive,
-//     BannerImageSix,
-//     BannerImageSeven
-// ]
 
 export default function HeroBannerSlider({ banners = [] }:{ banners: HomeBenner[] }) {
     

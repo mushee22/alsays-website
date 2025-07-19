@@ -1,34 +1,41 @@
+import MarkDownContent from "@/components/elements/markdown-content";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/ui/container";
+import { getStrapiImageURL } from "@/lib/config";
+import { Product } from "@/types";
+import Image from "next/image";
 
-export default function HeroSection() {
+export default function HeroSection({ title, image, description }: Pick<Product, 'title' | 'image' | 'description'>) {
     return (
         <Container className="py-12 md:py-24 md:mt-12">
             <div className="flex flex-col md:flex-row gap-y-6 gap-x-12">
-                <div className="aspect-[630/497] bg-grey-200 h-[320px] hidden sm:block lg:h-[497px] rounded-3xl"></div>
+                <div className="aspect-[630/497] bg-grey-200 h-[320px] relative hidden sm:block lg:h-[497px] rounded-3xl">
+                    {
+                        image?.[0]?.url ?
+                            <Image
+                                src={getStrapiImageURL(image?.[0]?.url) ?? ''}
+                                alt={title}
+                                fill
+                            />
+                            :
+                            <></>
+                    }
+                </div>
                 <div className="flex flex-col gap-y-3 md:gap-y-7 items-start">
-                    <h1 className="heading-lg text-primary leading-7.5">Rubber Mats</h1>
-                    <div className="aspect-[630/497] bg-grey-200 w-full block sm:hidden lg:h-[497px] rounded-3xl"></div>
-                    <p className="body-md text-grey-800">
-                       SF Rubber Flooring is available to order in pack of 10, 20... to 50. These are heavy-duty, 
-                       versatile rubber flooring tiles that can be used for any gym - be it home or commercial. 
-                       Each individual tile measures 500mm x 500mm x 10mm/20mm thick, and is manufactured from SBR rubber that is polymerically bonded with crumb rubber granules with hot-mold technology.
-                       These mats are perfect to use as a lifting platform; or a landing pad. 
-                       It protects your floor from scratches and abrasions which could easily be caused by dropping heavy weights.
-                    </p>
-                    <p className="body-md text-grey-800">
-                       SF Rubber Flooring is available to order in pack of 10, 20... to 50. These are heavy-duty, 
-                       versatile rubber flooring tiles that can be used for any gym - be it home or commercial. 
-                       Each individual tile measures 500mm x 500mm x 10mm/20mm thick, and is manufactured from SBR rubber that is polymerically bonded with crumb rubber granules with hot-mold technology.
-                       These mats are perfect to use as a lifting platform; or a landing pad. 
-                       It protects your floor from scratches and abrasions which could easily be caused by dropping heavy weights.
-                    </p>
-                    <p className="body-md text-grey-800">
-                        SF Rubber Flooring is available to order in pack of 10, 20... to 50. These are heavy-duty, 
-                       versatile rubber flooring tiles that can be used for any gym - be it home or commercial. 
-                       Each individual tile measures 500mm x 500mm x 10mm/20mm thick, and is manufactured from SBR rubber that is polymerically bonded with crumb rubber granules with hot-mold technology.
-                       These mats are perfect to use as a lifting platform; or a landing pad.
-                    </p>
+                    <h1 className="heading-lg text-primary leading-7.5">{title}</h1>
+                    <div className="aspect-[630/497] bg-grey-200 w-full relative block sm:hidden lg:h-[497px] rounded-3xl">
+                        {
+                            image?.[0]?.url ?
+                                <Image
+                                    src={getStrapiImageURL(image?.[0]?.url) ?? ''}
+                                    alt={title}
+                                    fill
+                                />
+                                :
+                                <></>
+                        }
+                    </div>
+                    <MarkDownContent content={description} />
                     <Button variant="outline" className="bg-transparent body-sm font-bold shadow-none border-primary flex items-center justify-center gap-x-1 w-[250px]">
                         Enquire now
                         <svg

@@ -1,5 +1,5 @@
 import { ListSection } from "@/components/sections/news"
-import { newsService } from "@/service/api"
+import { newsService } from "@/service/strapi"
 
 export default async function BlogPage() {
 

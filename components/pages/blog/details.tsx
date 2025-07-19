@@ -1,5 +1,5 @@
 import { BlogDetailsHeroSection, ContentSection } from "@/components/sections/blog";
-import { blogService } from "@/service/api";
+import { blogService } from "@/service/strapi";
 export default async function DetailsPage({ slug }: { slug: string }) {
 
     const { data: blog } = await blogService.findBySlug(slug, {

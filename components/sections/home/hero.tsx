@@ -1,15 +1,21 @@
 import { GridLayoutBg } from "@/assets"
 import HeroBannerSlider from "@/components/elements/hero-banner-slider"
 import LinkButton from "@/components/ui/link-button"
-import { homeBannerService } from "@/service/api"
+import { homeBannerService } from "@/service/strapi"
+import { unstable_cache } from "next/cache"
 import Image from "next/image"
-export default async function HeroSection() {
 
-    const { data: banners = [] } = await homeBannerService.find({
+const getCacheBanners = unstable_cache(async () => {
+    return homeBannerService.find({
         populate: {
             image: true
         }
     })
+}, [], { tags: ['banners'] })
+
+export default async function HeroSection() {
+
+    const { data: banners = [] } = await getCacheBanners();
 
     return (
         <section className="section-spacing  lg:pt-28">
@@ -35,7 +41,7 @@ export default async function HeroSection() {
                 </div>
 
             </div>
-            <HeroBannerSlider banners={banners}/>
+            <HeroBannerSlider banners={banners} />
         </section>
     )
 }

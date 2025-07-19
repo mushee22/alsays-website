@@ -1,5 +1,5 @@
 import { BlogListSection, LatestBlogSection } from "@/components/sections/blog";
-import { blogService } from "@/service/api";
+import { blogService } from "@/service/strapi";
 
 
 export default async function BlogPage() {

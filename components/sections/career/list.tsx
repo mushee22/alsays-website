@@ -1,6 +1,6 @@
 import CareerCard from "@/components/elements/career-card";
 import Container from "@/components/ui/container";
-import { careerService } from "@/service/api";
+import { careerService } from "@/service/strapi";
 
 export default async function CareerListSection() {
 

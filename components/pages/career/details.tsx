@@ -1,7 +1,7 @@
 import CareerApplicationForm from "@/components/elements/career-application-form";
 import { CareerDetailHeroSection, ContentSection } from "@/components/sections/career";
 import Container from "@/components/ui/container";
-import { careerService } from "@/service/api";
+import { careerService } from "@/service/strapi";
 
 
 export default async function Page({ slug }: { slug: string }) {

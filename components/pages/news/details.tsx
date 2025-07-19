@@ -1,5 +1,5 @@
 import { NewsContentSection, NewsDetailsHeroSection, } from "@/components/sections/news";
-import { newsService } from "@/service/api";
+import { newsService } from "@/service/strapi";
 export default async function DetailsPage({ slug }: { slug: string }) {
 
     const { data: news } = await newsService.findBySlug(slug, {

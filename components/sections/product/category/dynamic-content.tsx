@@ -1,5 +1,5 @@
 import { HeroSection, SubCategorySection } from "@/components/sections/product/category";
-import { categoryService } from "@/service/api";
+import { categoryService } from "@/service/strapi";
 import { unstable_cache } from "next/cache";
 
 const getCacheCategoryDetails = unstable_cache(
@@ -16,7 +16,7 @@ const getCacheCategoryDetails = unstable_cache(
         });
     }
     , ['category'], {
-    revalidate: 3600
+    tags: ['category']
 })
 
 export default async function DynamicContentSection({ slug }: { slug: string }) {

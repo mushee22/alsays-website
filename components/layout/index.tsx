@@ -1,25 +1,30 @@
-import { categoryService } from '@/service/api'
+import { categoryService } from '@/service/strapi'
+import { unstable_cache } from 'next/cache'
 import { PropsWithChildren } from 'react'
 import Footer from './footer'
 import NavBar from './navbar'
 
-
-
-export default async function Layout({ children }: PropsWithChildren) {
-
-    const { data: categories = [] } = await categoryService.find({
+const getCacheCategories = unstable_cache(async () => {
+    return categoryService.find({
         populate: {
             image: true,
             subCategories: true
         },
-        sort:{
+        sort: {
             order: "ASC"
         }
     })
+}, [], {
+    tags: ['menu']
+})
+
+export default async function Layout({ children }: PropsWithChildren) {
+
+    const { data: categories = [] } = await getCacheCategories()
 
     return (
         <>
-            <NavBar categories={categories ?? []}/>
+            <NavBar categories={categories ?? []} />
             <main className="@container flex-1">
                 {children}
             </main>

@@ -1,6 +1,6 @@
 
 import { HeroSection, OurStrategicSection, ProductSection } from "@/components/sections/product/category";
-import { subCategoryService } from "@/service/api";
+import { subCategoryService } from "@/service/strapi";
 import { unstable_cache } from "next/cache";
 
 const getCacheSubCategoryDetails = unstable_cache(async (slug: string) => {
@@ -15,7 +15,7 @@ const getCacheSubCategoryDetails = unstable_cache(async (slug: string) => {
             }
         }
     });
-}, ['sub-category'], { revalidate: 3600 })
+}, ['sub-category'], { tags: ['sub-category'] })
 
 export default async function SubCategoryDynamicSection({ slug }: { slug: string }) {
 
