@@ -1,9 +1,9 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextRequest } from "next/server";
 
 
-export async function POST(req: NextApiRequest, res: NextApiResponse) {
-    const body = req.body();
+export async function POST(req: NextRequest) {
+    const body = await req.json();
     console.log(body, "body parsed")
-    return res.status(200).json({ message: "Success", data: body })
+    return Response.json({ message: "Success", data: body }, {status: 200})
 }
 
