@@ -1,6 +1,7 @@
 'use client';
 
 import mutation from "@/api/mutation";
+import { COLLECTION_NAME } from "@/constant/strapi";
 import { ContactFormSchema } from "@/schema/contact-form";
 import { useFormik } from "formik";
 import { CheckCircle2Icon } from "lucide-react";
@@ -27,7 +28,7 @@ export default function ContactFormCard() {
         validationSchema: ContactFormSchema,
         onSubmit: async (values, helpers) => {
             try {
-                
+
                 helpers.setSubmitting(true);
 
                 const body = JSON.stringify({
@@ -38,7 +39,7 @@ export default function ContactFormCard() {
                         message: values.message,
                     }
                 })
-                const response = await mutation('contact-forms',body)
+                const response = await mutation(COLLECTION_NAME.lead, body)
 
                 if (!response.ok) {
                     helpers.setFieldValue('status', 'error');

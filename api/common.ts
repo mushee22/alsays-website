@@ -1,3 +1,4 @@
+import { MODEL_NAME } from "@/constant/strapi";
 import { homeBannerService, trustedPartnersService } from "@/service/strapi";
 import { unstable_cache } from "next/cache";
 
@@ -8,7 +9,7 @@ export const getTrustedBrands = unstable_cache(async () => {
         }
     });
 }, [], {
-    tags: ['trusted-brand']
+    tags: [MODEL_NAME.brands]
 })
 
 export const getBanners = unstable_cache(async () => {
@@ -17,4 +18,4 @@ export const getBanners = unstable_cache(async () => {
             image: true
         }
     })
-}, [], { tags: ['home-banner'] })
+}, [], { tags: [MODEL_NAME.banner] })

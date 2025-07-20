@@ -1,3 +1,4 @@
+import { COLLECTION_NAME } from "@/constant/strapi";
 import { strapiClient } from "@/lib/config";
 import { Blog, Brand, CareerOpening, Category, HomeBenner, NewsAndPublication, Product, StrapiCollectionResponse, SubCategory } from "@/types";
 import { CollectionTypeManager } from "@strapi/client";
@@ -48,14 +49,14 @@ export class StrapiService<T> {
 }
 
 
-const blogService = new StrapiService<Blog>('blogs');
-const newsService = new StrapiService<NewsAndPublication>('news-and-publications');
-const trustedPartnersService = new StrapiService<Brand>('trusted-brands');
-const homeBannerService = new StrapiService<HomeBenner>('home-banners');
-const careerService = new StrapiService<CareerOpening>('careers');
-const categoryService = new StrapiService<Category>('categories');
-const subCategoryService = new StrapiService<SubCategory>('sub-categories');
-const productService = new StrapiService<Product>('products');
+const blogService = new StrapiService<Blog>(COLLECTION_NAME.blog);
+const newsService = new StrapiService<NewsAndPublication>(COLLECTION_NAME.newsAndPublication);
+const trustedPartnersService = new StrapiService<Brand>(COLLECTION_NAME.brands);
+const homeBannerService = new StrapiService<HomeBenner>(COLLECTION_NAME.banner);
+const careerService = new StrapiService<CareerOpening>(COLLECTION_NAME.career);
+const categoryService = new StrapiService<Category>(COLLECTION_NAME.category);
+const subCategoryService = new StrapiService<SubCategory>(COLLECTION_NAME.subCategory);
+const productService = new StrapiService<Product>(COLLECTION_NAME.product);
 
 export {
     blogService,

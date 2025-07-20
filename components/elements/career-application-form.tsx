@@ -17,6 +17,7 @@ import {
     DialogTitle,
     DialogTrigger
 } from "@/components/ui/dialog";
+import { COLLECTION_NAME } from "@/constant/strapi";
 import { cn } from "@/lib/utils";
 import { ApplicationFormSchema } from "@/schema/apllication-schema";
 
@@ -64,7 +65,7 @@ export default function CareerApplicationForm({ id }: { id?: string }) {
                     }
                 });
 
-                const response = await mutation('applications', body)
+                const response = await mutation(COLLECTION_NAME.application, body)
 
                 if (!response.ok) {
                     helpers.setFieldValue('status', 'error');

@@ -1,17 +1,12 @@
+import { getLatestBlogs } from '@/api/blog'
 import BlogCard from '@/components/elements/blog-card'
 import Container from '@/components/ui/container'
 import LinkButton from '@/components/ui/link-button'
 
-import { blogService } from '@/service/strapi'
 
 export default async function WhatIsNewSection() {
   
-    const { data: latestBlogs = [] } =  await blogService.find({
-        populate: {
-            cover: true,
-        },
-        limit: 3,
-    })
+    const { data: latestBlogs = [] } =  await getLatestBlogs()
 
     if (latestBlogs.length === 0) {
         return null;

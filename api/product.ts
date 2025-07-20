@@ -1,3 +1,4 @@
+import { MODEL_NAME } from "@/constant/strapi"
 import { categoryService, productService, subCategoryService } from "@/service/strapi"
 import { unstable_cache } from "next/cache"
 
@@ -11,8 +12,7 @@ export const getCategoriesWithSubCategory = unstable_cache(async () => {
             order: "ASC"
         }
     })
-}, [], { tags: ['category', 'sub-category']})
-
+}, [], { tags: [MODEL_NAME.category, MODEL_NAME.subCategory]})
 
 export const getCategoryBySlug = unstable_cache(
     async (slug: string) => {
@@ -43,7 +43,7 @@ export const getSubCategorybySlug = unstable_cache(async (slug: string) => {
             }
         }
     });
-}, ['sub-category'], { tags: ['sub-category'] })
+}, [MODEL_NAME.subCategory], { tags: [MODEL_NAME.subCategory] })
 
 export const getProductBySlug = unstable_cache(async (slug: string) => {
   return productService.findBySlug(slug, {
@@ -53,6 +53,6 @@ export const getProductBySlug = unstable_cache(async (slug: string) => {
     }
   })
 }, [], {
-  tags: ['product']
+  tags: [MODEL_NAME.product]
 })
 
