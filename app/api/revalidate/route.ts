@@ -1,9 +1,13 @@
+import { revalidateTag } from "next/cache";
 import { NextRequest } from "next/server";
 
-
 export async function POST(req: NextRequest) {
-    const body = await req.json();
-    console.log(body, "body parsed")
-    return Response.json({ message: "Success", data: body }, {status: 200})
+    try {
+        const body = await req.json();
+        revalidateTag(body.model)
+        return Response.json({ message: "Success", data: JSON.stringify(body), model: body.model }, { status: 200 })
+    } catch (error) {
+        return Response.json({ message: "Failed", error: JSON.stringify(error) }, { status: 500 })
+    }
 }
 

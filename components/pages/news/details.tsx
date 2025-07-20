@@ -1,13 +1,19 @@
 import { NewsContentSection, NewsDetailsHeroSection, } from "@/components/sections/news";
 import { newsService } from "@/service/strapi";
-export default async function DetailsPage({ slug }: { slug: string }) {
+import { unstable_cache } from "next/cache";
 
-    const { data: news } = await newsService.findBySlug(slug, {
+const getCacheNewsByslug = unstable_cache(async (slug: string) => {
+    return newsService.findBySlug(slug, {
         populate: {
             cover: true,
         }
     }
     )
+}, [], { tags: ['news-and-publication'] })
+
+export default async function DetailsPage({ slug }: { slug: string }) {
+
+    const { data: news } = await getCacheNewsByslug(slug)
 
     const { createdAt, title, cover, content } = news[0] || {};
 
@@ -18,7 +24,7 @@ export default async function DetailsPage({ slug }: { slug: string }) {
                 title={title}
                 cover={cover?.url || ""}
             />
-            <NewsContentSection content={content}/>
+            <NewsContentSection content={content} />
         </>
     )
 }

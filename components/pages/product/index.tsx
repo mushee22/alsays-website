@@ -15,7 +15,7 @@ const getCacheProductsQuery = unstable_cache(async (slug: string) => {
     }
   })
 }, [], {
-  tags: ['products']
+  tags: ['product']
 })
 
 export default async function ProductPage({ slug = '' }: { slug?: string }) {

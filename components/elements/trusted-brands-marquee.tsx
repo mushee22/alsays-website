@@ -10,7 +10,7 @@ const getCacheTrustedBrands = unstable_cache(async () => {
         }
     });
 }, [], {
-    tags: ['brand']
+    tags: ['trusted-brand']
 })
 
 export default async function TrustedBrandMarquee() {

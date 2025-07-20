@@ -1,13 +1,15 @@
 import CareerCard from "@/components/elements/career-card";
 import Container from "@/components/ui/container";
 import { careerService } from "@/service/strapi";
+import { unstable_cache } from "next/cache";
+
+const getCacheCareer = unstable_cache(async () => {
+    return careerService.find({})
+}, [], { tags: ['career'] })
 
 export default async function CareerListSection() {
 
-
-    const { data: careers } = await careerService.find({
-
-    })
+    const { data: careers } = await getCacheCareer()
 
     return (
         <section id="CAREERS" className="bg-primary py-12 md:py-24 space-y-5 md:space-y-10">

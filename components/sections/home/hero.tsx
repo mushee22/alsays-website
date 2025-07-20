@@ -11,7 +11,7 @@ const getCacheBanners = unstable_cache(async () => {
             image: true
         }
     })
-}, [], { tags: ['banners'] })
+}, [], { tags: ['home-banner'] })
 
 export default async function HeroSection() {
 
