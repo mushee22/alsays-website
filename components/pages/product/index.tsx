@@ -1,26 +1,16 @@
 
+import { getProductBySlug } from "@/api/product";
 import {
   ContactBannerSection,
   HeroSection,
   RelatedServiceSection
-} from "@/components/sections/product"
-import { productService } from "@/service/strapi"
-import { unstable_cache } from "next/cache"
+} from "@/components/sections/product";
 
-const getCacheProductsQuery = unstable_cache(async (slug: string) => {
-  return productService.findBySlug(slug, {
-    populate: {
-      image: true,
-      subCategory: true,
-    }
-  })
-}, [], {
-  tags: ['product']
-})
+
 
 export default async function ProductPage({ slug = '' }: { slug?: string }) {
 
-  const { data: products } = await getCacheProductsQuery(slug);
+  const { data: products } = await getProductBySlug(slug);
 
   const product = products?.[0];
 

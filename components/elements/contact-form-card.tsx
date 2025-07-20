@@ -1,6 +1,6 @@
 'use client';
 
-import { STRAPI_BASE_URL_WITH_API } from "@/lib/config";
+import mutation from "@/api/mutation";
 import { ContactFormSchema } from "@/schema/contact-form";
 import { useFormik } from "formik";
 import { CheckCircle2Icon } from "lucide-react";
@@ -27,22 +27,18 @@ export default function ContactFormCard() {
         validationSchema: ContactFormSchema,
         onSubmit: async (values, helpers) => {
             try {
+                
                 helpers.setSubmitting(true);
-                const response = await fetch(STRAPI_BASE_URL_WITH_API + '/contact-forms', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        data: {
-                            firstName: values.first_name,
-                            lastName: values.last_name,
-                            email: values.email,
-                            message: values.message,
-                        }
+
+                const body = JSON.stringify({
+                    data: {
+                        firstName: values.first_name,
+                        lastName: values.last_name,
+                        email: values.email,
+                        message: values.message,
                     }
-                    )
                 })
+                const response = await mutation('contact-forms',body)
 
                 if (!response.ok) {
                     helpers.setFieldValue('status', 'error');

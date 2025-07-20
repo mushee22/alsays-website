@@ -1,21 +1,12 @@
+import { getBlogs } from "@/api/blog";
 import { BlogListSection, LatestBlogSection } from "@/components/sections/blog";
-import { blogService } from "@/service/strapi";
-import { unstable_cache } from "next/cache";
 
-const getCacheBlog = unstable_cache(async () => {
-  return blogService.find({
-    populate: {
-      cover: true,
-    }
-  })
-}, [], {
-  tags: ['blog']
-})
+
 
 
 export default async function BlogPage() {
 
-  const { data: blogs = [] } = await getCacheBlog();
+  const { data: blogs = [] } = await getBlogs();
 
   const latestBlogs = blogs.slice(0, 2);
   const otherBlogs = blogs.slice(2);

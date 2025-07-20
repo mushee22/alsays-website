@@ -1,16 +1,11 @@
+import { getCareerBySlug } from "@/api/career";
 import CareerApplicationForm from "@/components/elements/career-application-form";
 import { CareerDetailHeroSection, ContentSection } from "@/components/sections/career";
 import Container from "@/components/ui/container";
-import { careerService } from "@/service/strapi";
-import { unstable_cache } from "next/cache";
-
-const getCacheCareerBySlug = unstable_cache(async (slug: string) => {
-  return careerService.findBySlug(slug, {})
-}, [], { tags: ['career'] })
 
 export default async function Page({ slug }: { slug: string }) {
 
-  const { data } = await getCacheCareerBySlug(slug);
+  const { data } = await getCareerBySlug(slug);
 
   const openning = data[0]
 

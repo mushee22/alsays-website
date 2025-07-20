@@ -25,15 +25,13 @@ Sed nunc nulla nibh blandit nisl iaculis velit velit metus. Sit nisl interdum eu
 export default function ContentSection({content}:{content?: string}) {
     return (
         <Container className="max-w-5xl flex flex-col md:flex-row relative section-spacing  mt-5 md:mt-10 text-grey-800">
-            <div className=" max-md:sticky top-[120px] md:mt-10 mb-5 max-md:self-end">
+            <div className=" max-md:sticky top-[120px] md:mt-10 mb-0 max-md:self-end">
                 <div className="md:sticky top-[120px]">
                     <SocialShare />
                 </div>
             </div>
             <div className="px-3 md:px-6 lg:px-12">
-                <MarkDownContent
-                    content={content ?? ""}
-                />
+                <MarkDownContent content={content ?? ""}/>
             </div>
         </Container>
     )

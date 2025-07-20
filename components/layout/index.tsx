@@ -1,26 +1,11 @@
-import { categoryService } from '@/service/strapi'
-import { unstable_cache } from 'next/cache'
+import { getCategoriesWithSubCategory } from '@/api/product'
 import { PropsWithChildren } from 'react'
 import Footer from './footer'
 import NavBar from './navbar'
 
-const getCacheCategories = unstable_cache(async () => {
-    return categoryService.find({
-        populate: {
-            image: true,
-            subCategories: true
-        },
-        sort: {
-            order: "ASC"
-        }
-    })
-}, [], {
-    tags: ['menu']
-})
-
 export default async function Layout({ children }: PropsWithChildren) {
 
-    const { data: categories = [] } = await getCacheCategories()
+    const { data: categories = [] } = await getCategoriesWithSubCategory()
 
     return (
         <>

@@ -1,21 +1,11 @@
-import { trustedPartnersService } from "@/service/strapi";
-import { unstable_cache } from "next/cache";
+import { getTrustedBrands } from "@/api/common";
 import Image, { StaticImageData } from "next/image";
 import Marquee from "react-fast-marquee";
 
-const getCacheTrustedBrands = unstable_cache(async () => {
-    return trustedPartnersService.find({
-        populate: {
-            logo: true
-        }
-    });
-}, [], {
-    tags: ['trusted-brand']
-})
 
 export default async function TrustedBrandMarquee() {
 
-    const { data: brands = [] } = await getCacheTrustedBrands()
+    const { data: brands = [] } = await getTrustedBrands()
 
     return (
         <Marquee gradient autoFill>

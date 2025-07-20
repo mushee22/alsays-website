@@ -1,21 +1,13 @@
+import { getBanners } from "@/api/common"
 import { GridLayoutBg } from "@/assets"
 import HeroBannerSlider from "@/components/elements/hero-banner-slider"
 import LinkButton from "@/components/ui/link-button"
-import { homeBannerService } from "@/service/strapi"
-import { unstable_cache } from "next/cache"
 import Image from "next/image"
 
-const getCacheBanners = unstable_cache(async () => {
-    return homeBannerService.find({
-        populate: {
-            image: true
-        }
-    })
-}, [], { tags: ['home-banner'] })
 
 export default async function HeroSection() {
 
-    const { data: banners = [] } = await getCacheBanners();
+    const { data: banners = [] } = await getBanners();
 
     return (
         <section className="section-spacing  lg:pt-28">

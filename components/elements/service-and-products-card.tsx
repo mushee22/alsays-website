@@ -12,7 +12,7 @@ interface Product {
 export default function ServiceAndProductCard({ name, description, services = [], coverImage }:Product) {
     return (
         <div className="border rounded-[40px] gap-7 flex flex-col lg:flex-row p-6 border-grey-100 md:sticky top-0 bg-grey-50">
-            <div className="aspect-square h-[352px] lg:w-[352px] bg-grey-100 relative rounded-3xl">
+            <div className="aspect-square lg:h-[352px] lg:w-[352px] bg-grey-100 relative rounded-3xl">
                 {coverImage && <Image src={coverImage} alt={name} fill />}
             </div>
             <div className="py-5 space-y-4 md:space-y-8 flex-1">

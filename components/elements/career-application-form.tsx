@@ -8,6 +8,7 @@ import { Button, buttonVariants } from "../ui/button";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
 
+import mutation from "@/api/mutation";
 import {
     Dialog,
     DialogContent,
@@ -63,13 +64,7 @@ export default function CareerApplicationForm({ id }: { id?: string }) {
                     }
                 });
 
-                const response = await fetch(STRAPI_BASE_URL_WITH_API + '/applications', {
-                    method: 'POST',
-                    body: body,
-                    headers: {
-                        'Content-Type': 'application/json',
-                    }
-                })
+                const response = await mutation('applications', body)
 
                 if (!response.ok) {
                     helpers.setFieldValue('status', 'error');
@@ -149,10 +144,15 @@ export default function CareerApplicationForm({ id }: { id?: string }) {
                             ) : null}
                         </div>
                         <div className="space-y-1.5">
-                            <Label htmlFor="last_name" className="required-label">Resume</Label>
-                            <Input type="file" required accept="/pdf" onChange={(event) => {
-                                formik.setFieldValue('file', event.currentTarget.files ? event.currentTarget.files[0] : '');
-                            }} />
+                            <Label htmlFor="file" className="required-label">Resume</Label>
+                            <Input
+                                type="file"
+                                required
+                                accept="application/pdf,image/*"
+                                onChange={(event) => {
+                                    formik.setFieldValue('file', event.currentTarget.files ? event.currentTarget.files[0] : '');
+                                }}
+                            />
                         </div>
 
                         <Button className="w-full" disabled={formik.isSubmitting}>Send Application</Button>
