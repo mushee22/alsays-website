@@ -1,4 +1,5 @@
 import { getTrustedBrands } from "@/api/common";
+import { getStrapiImageURL } from "@/lib/config";
 import Image, { StaticImageData } from "next/image";
 import Marquee from "react-fast-marquee";
 
@@ -13,7 +14,7 @@ export default async function TrustedBrandMarquee() {
                 brands.map((brand, index) => (
                     <MarqueeItem
                         key={index}
-                        src={brand.logo?.url ?? ""}
+                        src={getStrapiImageURL(brand.logo?.url) ?? ""}
                         alt={brand.title ?? 'Trusted Brand Logo'}
                     />
                 ))
