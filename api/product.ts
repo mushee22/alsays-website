@@ -27,8 +27,8 @@ export const getCategoryBySlug = unstable_cache(
             }
         });
     }
-    , ['category'], {
-    tags: ['category']
+    , [MODEL_NAME.category], {
+    tags: [MODEL_NAME.category, MODEL_NAME.subCategory]
 })
 
 export const getSubCategorybySlug = unstable_cache(async (slug: string) => {
@@ -43,7 +43,7 @@ export const getSubCategorybySlug = unstable_cache(async (slug: string) => {
             }
         }
     });
-}, [MODEL_NAME.subCategory], { tags: [MODEL_NAME.subCategory] })
+}, [MODEL_NAME.subCategory], { tags: [MODEL_NAME.subCategory, MODEL_NAME.product] })
 
 export const getProductBySlug = unstable_cache(async (slug: string) => {
   return productService.findBySlug(slug, {
@@ -53,6 +53,6 @@ export const getProductBySlug = unstable_cache(async (slug: string) => {
     }
   })
 }, [], {
-  tags: [MODEL_NAME.product]
+  tags: [MODEL_NAME.product, MODEL_NAME.product, MODEL_NAME.subCategory]
 })
 
