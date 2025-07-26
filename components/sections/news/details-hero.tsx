@@ -1,4 +1,5 @@
 import Container from "@/components/ui/container";
+import { getStrapiImageURL } from "@/lib/config";
 import Image from "next/image";
 
 interface Props {
@@ -24,7 +25,7 @@ export default function NewsDetailsHeroSection({ title, createdAt, cover }: Prop
             </div>
             <div className="aspect-[914/457] w-full bg-primary-100 rounded-3xl mt-5 md:mt-10 relative overflow-hidden">
                 <Image
-                    src={cover || ""}
+                    src={getStrapiImageURL(cover ?? "") || ""}
                     alt={title}
                     fill
                 />
