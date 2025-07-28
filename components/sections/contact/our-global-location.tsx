@@ -21,7 +21,7 @@ export default function OurGlobalLocationSection() {
           ))
         }
       </div>
-      <div className='aspect-[1248/414] min-h-[414px] w-full'>
+      <div className='aspect-[1248/414] min-h-[414px] w-full rounded-[10px] overflow-hidden'>
         <iframe
           className="w-full h-full "
           src={`https://maps.google.com/maps?q=${26.166753},${50.610746}&output=embed`}

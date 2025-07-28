@@ -71,6 +71,7 @@ export default function NavBar({ categories } : { categories?: Category[] }) {
             subMenu: [
                 { title: "Blog", path: "/blog" },
                 { title: "News & Publications", path: "/news" },
+                { title: "Careers", path: "/career" },
             ],
         },
     ]
