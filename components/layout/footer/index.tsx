@@ -63,7 +63,7 @@ export default function Footer() {
                                         <p className='ml-1'>{footer.address.phone}</p>
                                     </div>
                                     <div className='flex'>
-                                        <Icon.Location/>
+                                        <Icon.Email/>
                                         <p className='ml-1'>{footer.address.email}</p>
                                     </div>
                                 </div>

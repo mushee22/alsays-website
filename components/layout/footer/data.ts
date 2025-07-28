@@ -49,14 +49,13 @@ export const footer = {
     ],
     address: {
         title: "Contact",
-        location: `Al Says Company FZE
-
-P1-ELOB Office No. E2-102F-60
-PO Box No. 42966
-Hamriyah Free Zone – Sharjah
-United Arab Emirates`,
-        phone: "+971 23456789",
-        email: "info@alsais-trading.com"
+        location: `Warehouse Office 
+Warehouse # 01/02, 22nd Street, Al Marabea Street,
+Near FedEx Service Center,
+Al Quoz Industrial Area  # 3,
+Dubai, United Arab Emirates.`,
+        phone: "+971 42884615",
+        email: "info@alsais-trading.com \n alsays@alsais-trading.com"
     },
     subscription: {
         title: "Subscribe our Newsletter",

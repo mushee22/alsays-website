@@ -1,7 +1,7 @@
 import Container from "@/components/ui/container";
 import LinkButton from "@/components/ui/link-button";
 
-import { HomeAboutSectionImage } from "@/assets";
+import { SustainabilityAboutSectionImage } from "@/assets";
 
 import AchievementCard from "@/components/elements/achievement-card";
 import data from "@/data/home.json";
@@ -40,9 +40,9 @@ export default function AboutSection() {
                     </div>
                 </div>
                 <div className="py-6">
-                    <div className="aspect-[487/529] relative lg:w-[487px]">
+                    <div className="aspect-[487/529] relative rounded-2xl overflow-hidden lg:w-[487px]">
                         <Image
-                            src={HomeAboutSectionImage}
+                            src={SustainabilityAboutSectionImage}
                             alt={title}
                             fill
                         />
