@@ -23,6 +23,7 @@ export default function NewsCard({ title, createdAt, slug, cover }: News) {
             src={getStrapiImageURL(cover?.url ?? "") || ""}
             alt={title}
             fill
+            className="object-cover"
           />
         </div>
         <div className="flex flex-col gap-y-4 flex-1">

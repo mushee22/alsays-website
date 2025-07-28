@@ -32,7 +32,7 @@ export default function BlogCard({
           src={getStrapiImageURL(cover?.url ?? "") ?? BlogImage}
           alt={title}
           fill
-          className="hover:scale-110 transition-transform duration-500"
+          className="hover:scale-110 object-cover transition-transform duration-500"
         />
       </div>
       <div className="space-y-4">
