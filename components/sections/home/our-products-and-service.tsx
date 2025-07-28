@@ -6,7 +6,7 @@ import data from "@/data/home.json";
 
 export default function OurProductAndServicesSection() {
 
-    const { title, subHeading, description, action, productsAndServices } = data.sections.ourProductAndService
+    const { title, subHeading, description, productsAndServices } = data.sections.ourProductAndService
 
     return (
         <Container className="section-spacing">
