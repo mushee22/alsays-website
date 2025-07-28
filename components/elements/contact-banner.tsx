@@ -1,7 +1,7 @@
 import { ContactCardBg } from "@/assets"
 import Image from "next/image"
-import Link from "next/link"
 import { Button } from "../ui/button"
+import Link from "next/link"
 
 export default function ContactBanner({ title, description }: { title: string, description: string }) {
     return (
@@ -14,7 +14,7 @@ export default function ContactBanner({ title, description }: { title: string, d
             />
             <h2 className="heading-md text-center">{title}</h2>
             <p className="body-lg max-w-[415px] text-center">{description}</p>
-            <Link href={"contact-us"}>
+            <Link href={"/contact-us"}>
                 <Button>Contact us</Button>
             </Link>
         </div>
