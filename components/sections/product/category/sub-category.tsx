@@ -10,7 +10,7 @@ export default function SubCategorySection({ name, subCategories, slug }:Pick<Ca
                     <span className="title-lg text-grey-800 text-center">Categories for you</span>
                     <h2 className="heading-md text-primary text-center">Collect insights you can trust</h2>
                 </div>
-                <div className="grid min-[420px]:grid-cols-2 md:grid-cols-3 gap-3 md:gap-5 mt-10">
+                <div className="grid min-[420px]:grid-cols-2 md:grid-cols-3 gap-3 md:gap-8 mt-10">
                     {
                         subCategories?.map((subCategory, index) => (
                             <SubCategoryCard

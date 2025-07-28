@@ -31,7 +31,7 @@ import MarketPresenceHeroImage from "@/assets/images/market-presence/market-pres
 import SustainabilityAboutSectionImage from "@/assets/images/sustainability/about-sustainabilty.png";
 import SustainabilityHeroImage from "@/assets/images/sustainability/sustainability-hero-bg.png";
 
-import MenuSideImage from "@/assets/images/layout/menu-side-image.png";
+import MenuSideImage from "@/assets/images/layout/menu-side-image.svg";
 
 import WhyChooseUsImage from "@/assets/images/product/why-choose-us.png";
 

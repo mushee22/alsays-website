@@ -11,7 +11,7 @@ interface Props extends Pick<SubCategory, 'name' | 'description' | 'slug' | 'ima
 export default function SubCategoryCard({ name, image, description, slug, categoryName, categorySlug }: Props) {
     return (
         <Link href={`/product/${categorySlug}/${slug}`} className="flex flex-col ">
-            <div className="aspect-square bg-grey-100 rounded-2xl relative mb-3 md:mb-6 ">
+            <div className="aspect-square bg-grey-100 rounded-2xl relative mb-3 md:mb-6 overflow-hidden">
                 {
                     image?.url ?
                     <Image
