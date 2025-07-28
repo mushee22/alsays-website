@@ -14,7 +14,7 @@ export default function OurProductAndServicesSection() {
                 <span className="title-lg text-grey-800">{subHeading}</span>
                 <h2 className="text-primary heading-md">{title}</h2>
                 <span className="body-md text-grey-800 max-w-[660px] text-center">{description}</span>
-                <LinkButton href={action.path}>{action.title}</LinkButton>
+                {/* <LinkButton href={action.path}>{action.title}</LinkButton> */}
             </div>
             <div className="mt-8 md:mt-16 space-y-4 md:space-y-8">
                 {
