@@ -1,6 +1,6 @@
 
 import { getSubCategorybySlug } from "@/api/product";
-import { ContactBannerSection, HeroSection, OurStrategicSection, ProductSection, TrustedBrandsSection, WhyChooseUsSection } from "@/components/sections/product/category";
+import { ContactBannerSection, HeroSection, ProductSection, TrustedBrandsSection, WhyChooseUsSection } from "@/components/sections/product/category";
 
 export default async function SubCategoryPage({ slug = '' }: { slug?: string }) {
     const { data } = await getSubCategorybySlug(slug)
@@ -14,7 +14,6 @@ export default async function SubCategoryPage({ slug = '' }: { slug?: string }) 
                 image={subCategory?.image}
                 categoryName={subCategory?.category?.name}
             />
-            <OurStrategicSection />
             {
                 subCategory?.products && subCategory?.products.length > 0 && <ProductSection products={subCategory.products} />
             }

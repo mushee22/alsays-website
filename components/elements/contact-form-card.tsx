@@ -51,7 +51,7 @@ export default function ContactFormCard() {
                 setTimeout(() => {
                     helpers.setFieldValue('status', '');
                     helpers.resetForm();
-                }, 2000)
+                }, 5000)
 
             } catch (error) {
                 helpers.setFieldValue('status', 'error');
