@@ -4,7 +4,7 @@ import { Blog } from "@/types";
 
 export default function LatestBlogSection({ blogs }:{ blogs?: Blog[] }) {
     return (
-        <Container className="md:mt-24 py-12 md:py-24">
+        <Container className="md:mt-24 pt-24 pb-12 md:py-24">
             <h2 className="heading-lg text-primary mb-3 md:mb-6">The Latest from Al Says</h2>
             <p className="body-md text-grey-800 ">
                 Discover a curated selection of dependable, industry-grade products designed to support growth, performance,

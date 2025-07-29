@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
     return (
-        <Container className="pt-12 lg:pt-[164px] pb-12 lg:pb-24 flex flex-col gap-y-6 md:flex-row items-center gap-x-12">
+        <Container className="pt-24 lg:pt-[164px] pb-12 lg:pb-24 flex flex-col gap-y-6 md:flex-row items-center gap-x-12">
             <div className="space-y-7 basis-[45%] lg:w-[570px]">
                 <h1 className="title text-primary">
                     Expanding Reach, Building Trust Across Sectors

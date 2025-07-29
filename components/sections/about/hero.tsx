@@ -6,7 +6,7 @@ import AchievementCard from "@/components/elements/achievement-card";
 
 export default function HeroSection() {
     return (
-        <Container className="max-w-screen relative pt-12 lg:pt-24 pb-12.5">
+        <Container className="max-w-screen relative pt-24 lg:pt-24 pb-12.5">
             <Image
                 src={AboutHeroSectionBgImage}
                 alt=""

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function CareerDetailHeroSection({ positionName, documentId, locationType, description }: CareerOpening) {
     return (
-        <section className="relative pt-14 lg:pt-24 pb-12.5">
+        <section className="relative pt-24 lg:pt-24 pb-12.5">
             <Image
                 src={AboutHeroSectionBgImage}
                 alt=""

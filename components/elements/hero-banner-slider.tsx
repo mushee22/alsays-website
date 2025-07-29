@@ -30,7 +30,11 @@ export default function HeroBannerSlider({
 
   const [emblaRef] = useEmblaCarousel({ 
     loop: true, 
-    axis: isMobile ? "x" : "y" 
+    axis: isMobile ? "x" : "y",
+    ...(isMobile && {
+      slidesToScroll: 1,
+      containScroll: "trimSnaps"
+    })
   }, [
     Autoplay({
       delay: 3000,

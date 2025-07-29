@@ -8,7 +8,7 @@ export default function ContactFormSection() {
     const { address, subHeading, title } = data.sections.contactForm
 
     return (
-        <Container className="lg:mt-28 pt-6 lg:pt-24 section-spacing">
+        <Container className="lg:mt-28 pt-20 lg:pt-24 section-spacing">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-11">
                 <div className="pb-5 md:pb-10 flex flex-col justify-between">
                     <div className="space-y-4 md:space-y-8">

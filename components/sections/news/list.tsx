@@ -4,7 +4,7 @@ import { NewsAndPublication } from "@/types";
 
 export default function ListSection({ news }: { news?: NewsAndPublication[] }) {
   return (
-    <Container className="lg:mt-24 py-12 lg:py-24">
+    <Container className="lg:mt-24 pt-24 pb-12 lg:py-24">
       <h1 className="text-primary heading-lg">AL Says Newsroom</h1>
       <p className="body-md text-grey-800">
         Browse recent press releases and media coverage

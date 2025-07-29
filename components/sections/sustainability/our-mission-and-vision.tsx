@@ -17,7 +17,7 @@ export default function OurVisionAndMissionSection() {
                  and efficient distribution channels that contribute to a resource-efficient, zero-emission, 
                  and environmentally sustainable future.
             </p>
-            <div className="flex gap-x-2.5 max-md:flex-wrap gap-y-3">
+            <div className="flex gap-x-3.5 md:gap-x-6 lg:gap-x-8 max-md:flex-wrap gap-y-3">
                 {
                     statistics.map((achievement, index) => (
                         <AchievementCard

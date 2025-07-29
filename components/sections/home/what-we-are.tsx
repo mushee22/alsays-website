@@ -8,7 +8,7 @@ export default function WhatWeAreSection() {
   return (
     <Container className='section-spacing'>
         <div className='max-w-4xl mx-auto space-y-5 md:space-y-10'>
-            <h2 className='text-primary text-center heading-lg font-medium'>{title}</h2>
+            <h2 className='text-primary md:text-center heading-lg max-md:leading-8 font-medium'>{title}</h2>
         </div>
     </Container>
   )

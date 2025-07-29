@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function HeroSection() {
     return (
-        <section className="aspect-[1442/609] w-full min-h-[330px] md:h-[609px] relative">
+        <section className="aspect-[1442/609] w-full min-h-[350px] md:h-[609px] relative">
             <Image
                 src={SustainabilityHeroImage}
                 alt="sustainability image"

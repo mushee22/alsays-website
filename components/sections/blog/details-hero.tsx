@@ -18,7 +18,7 @@ export default function BlogDetailsHeroSection({ title, createdAt, cover, }:Prop
     });
 
     return (
-        <Container className="max-w-4.5xl lg:mt-24 pt-6  lg:pt-24">
+        <Container className="max-w-4.5xl lg:mt-24 pt-24 lg:pt-24">
             <div className="space-y-4 px-3 md:px-12">
                 <span className="body-sm text-grey-800" data-data>{formattedDate}</span>
                 <p className="text-grey-900 heading-xl" data-title>{title}</p>

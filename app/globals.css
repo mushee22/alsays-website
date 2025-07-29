@@ -211,7 +211,7 @@
   }
 
   .section-spacing {
-      @apply  pb-6 md:pb-12 lg:pb-24
+      @apply  pb-10 md:pb-12 lg:pb-24
   }
 
   .heading-2xl {
@@ -223,7 +223,7 @@
   }
   
   .heading-lg {
-    @apply text-xl leading-6.5 md:text-4.5xl font-bold md:leading-14;
+    @apply text-3xl leading-6.5 md:text-4.5xl font-bold md:leading-14;
   }
   
   .heading-md {

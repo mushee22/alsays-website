@@ -20,7 +20,7 @@ export default function Footer() {
                                 className=""
                                 width={130}
                             />
-                            <div className='max-w-[327px] space-y-4'>
+                            <div className='md:max-w-[327px] space-y-4'>
                                 <p className='title-sm uppercase'>{footer.title}</p>
                                 <span className='body-sm text-grey-100'>{footer.description}</span>
                             </div>
@@ -37,7 +37,7 @@ export default function Footer() {
                                 }
                             </div>
                         </div>
-                        <div className='flex flex-col sm:flex-row flex-1 gap-x-6 justify-between'>
+                        <div className='flex flex-col sm:flex-row flex-1 gap-x-6 gap-y-4 justify-between'>
                             {footer.footerLinks.map((link) => (
                                 <div key={link.title}>
                                     <h3 className='title-sm uppercase mb-4'>{link.title}</h3>
@@ -52,7 +52,7 @@ export default function Footer() {
                                     </ul>
                                 </div>
                             ))}
-                            <div className='space-y-5 max-w-[240px]'>
+                            <div className='space-y-5 md:max-w-[240px]'>
                                 <h3 className='title-sm uppercase mb-4'>{footer.address.title}</h3>
                                 <div className='space-y-6 body-sm text-grey-100'>
                                     <div className='flex '>
