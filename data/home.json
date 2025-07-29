@@ -68,7 +68,7 @@
                         "Warehouse/Store Management",
                         "Procurement of essentials and LSA consumables"
                     ],
-                    "coverImage": "/service-image-1.png",
+                    "coverImage": "/flooring.png",
                     "action": {
                         "title": "Read More",
                         "path": ""
@@ -86,7 +86,7 @@
                         "Fire and safety systems",
                         "Access control systems"
                     ],
-                    "coverImage": "/service-image-2.png",
+                    "coverImage": "/fmcg.jpg",
                     "action": {
                         "title": "Read More",
                         "path": ""

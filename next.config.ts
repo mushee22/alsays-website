@@ -18,7 +18,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "strapi.alsaistrading.com",
+        hostname: "admin.alsaistrading.com",
         port: "",
         pathname: "/uploads/**",
       }
