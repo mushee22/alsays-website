@@ -83,7 +83,7 @@ export const MobileMenu = ({ isOpen, menuItems, onClose }: MobileMenuProps) => {
             <div className="absolute inset-0 bg-black/50" onClick={onClose} />
             <div
                 className={cn(
-                    "absolute top-0 right-0 h-fit w-screen  bg-white shadow-xl transition-transform duration-300",
+                    "absolute top-0 right-0 h-[85%] w-screen bg-white shadow-xl transition-transform duration-300 overflow-hidden",
                     isOpen ? "translate-y-0" : "-translate-y-full",
                 )}
             >

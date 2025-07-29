@@ -52,12 +52,12 @@ export default function Footer() {
                                     </ul>
                                 </div>
                             ))}
-                            <div className='space-y-5 md:max-w-[240px]'>
+                            <div className='space-y-5 md:max-w-[230px]'>
                                 <h3 className='title-sm uppercase mb-4'>{footer.address.title}</h3>
                                 <div className='space-y-6 body-sm text-grey-100'>
                                     <div className='flex '>
                                         <Icon.Location/>
-                                        <p className='whitespace-pre-wrap ml-1'>{footer.address.location}</p>
+                                        <p className='whitespace-pre-wrap ml-1 flex-1'>{footer.address.location}</p>
                                     </div>
                                     <div className='flex'>
                                         <Icon.Phone/>
@@ -93,7 +93,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className='px-6 py-4 mt-10 bg-white/10 rounded-full flex flex-wrap max-md:justify-center justify-between items-center'>
-                    <span className='text-grey-200 body-sm'>
+                    <span className='text-grey-200 body-sm max-sm:text-center'>
                         © AL Says Company FZE 2025 | All Rights Reserved
                     </span>
                     <div>

@@ -48,11 +48,7 @@ export const footer = {
     ],
     address: {
         title: "Contact",
-        location: `Warehouse Office 
-Warehouse # 01/02, 22nd Street, Al Marabea Street,
-Near FedEx Service Center,
-Al Quoz Industrial Area  # 3,
-Dubai, United Arab Emirates.`,
+        location: `Warehouse Office Warehouse  # 01/02, 22nd Street, Al Marabea Street, Near FedEx Service Center, Al Quoz Industrial Area  # 3,Dubai, United Arab Emirates.`,
         phone: "+971 42884615",
         email: "info@alsais-trading.com \n alsays@alsais-trading.com"
     },
