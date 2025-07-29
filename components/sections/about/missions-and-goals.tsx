@@ -6,9 +6,9 @@ import Image from "next/image";
 export default function OurMissionsAndGoalsSection() {
   return (
     <Container className="section-spacing pt-12 md:pt-24">
-      <div className="flex flex-col lg:flex-row gap-4">
+      <div className="flex flex-col lg:flex-row gap-7">
         <div className="flex-1 flex flex-col  gap-y-5 md:gap-y-10">
-          <span className="subheading">MISSION, VISION + GOALS</span>
+          {/* <span className="subheading">MISSION, VISION + GOALS</span> */}
           <h2 className="heading-md text-primary">
             At AL Says, we always focus on quality and consistency with good enough market acceptance
           </h2>

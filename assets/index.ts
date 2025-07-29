@@ -9,7 +9,7 @@ import FacebookIcon from '@/assets/svg/facebook.svg';
 import InstagramIcon from '@/assets/svg/instagram.svg';
 import ServiceIcon from "@/assets/svg/service.svg";
 import XIcon from '@/assets/svg/twitter.svg';
-import YoutubeIcon from '@/assets/svg/youtube.svg';
+import LinkdInIcon from '@/assets/svg/linkedin.svg';
 
 import AboutHeroSectionBgImage from "@/assets/images/about/hero-bg.png";
 
@@ -89,6 +89,6 @@ export {
     SustainabilityHeroImage,
     WhyChooseUsImage,
     XIcon,
-    YoutubeIcon
+    LinkdInIcon
 };
 

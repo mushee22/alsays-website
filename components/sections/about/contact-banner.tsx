@@ -5,7 +5,7 @@ export default function ContactBannerSection() {
     return (
         <Container className='section-spacing'>
             <ContactBanner 
-               title='Comprehensive trading solutions under one roof'
+               title='Comprehensive Trading Solutions Under One Roof'
                description='Let us know your requirements — we’ll source and deliver the right solution for your project.'
             />
         </Container>

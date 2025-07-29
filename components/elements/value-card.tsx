@@ -8,7 +8,7 @@ interface ValueCard {
     className?: string;
 }
 
-export default function ValueCard({ description, title, className = '' }: ValueCard) {
+export default function ValueCard({ title, className = '' }: ValueCard) {
     return (
         <div className={cn("p-6 rounded-2xl bg-[#F8FAFC] space-y-7", className)}>
             <div className="w-11 h-11 flex flex-col justify-center items-center icon-container">
@@ -39,7 +39,7 @@ export default function ValueCard({ description, title, className = '' }: ValueC
             </div>
             <div className="space-y-2.5">
                 <p className="title-lg text-grey-900">{title}</p>
-                <span className="body-md text-grey-800">{description}</span>
+                {/* <span className="body-md text-grey-800">{description}</span> */}
             </div>
         </div>
     )

@@ -1,32 +1,31 @@
-import { FacebookIcon, InstagramIcon, XIcon, YoutubeIcon } from "@/assets";
+import { FacebookIcon, InstagramIcon, LinkdInIcon } from "@/assets";
 
 
 export const footer = {
-    title: "AL SAIS TRADING",
+    title: "AL Says Company FZE",
     description: `
-     Alsais Trading Co. is a Saudi-based company providing reliable trading, 
-     contracting, and supply solutions across various industries.
+     AL Says Company FZE. is an UAE – Dubai based company providing reliable trading and supply solutions across various industries.
     `,
     socialIcons: [
         {
             name: "Instagram",
             icon: InstagramIcon,
-            link: "https://www.linkedin.com/company/alsais-trading"
+            link: "https://www.instagram.com/allsays_flooring/"
         },
         {
             name: "Facebook",
             icon: FacebookIcon,
-            link: "https://www.facebook.com/alsais.trading"
+            link: "https://www.facebook.com/allsaysflooring"
         },
+        // {
+        //     name: "X",
+        //     icon: XIcon,
+        //     link: "https://www.instagram.com/alsais.trading"
+        // },
         {
-            name: "X",
-            icon: XIcon,
-            link: "https://www.instagram.com/alsais.trading"
-        },
-        {
-            name: "YouTube",
-            icon: YoutubeIcon,
-            link: "https://www.instagram.com/alsais.trading"
+            name: "LinkdIn",
+            icon: LinkdInIcon,
+            link: "https://www.linkedin.com/company/all-says-floorings/?viewAsMember=true"
         },
     ],
     footerLinks: [

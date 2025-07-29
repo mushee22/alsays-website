@@ -27,17 +27,17 @@
                 {
                     "count": "200+",
                     "name": "Projects",
-                    "description": "Successfully Completed Across Saudi Arabia"
+                    "description": "Successfully Completed Across Global"
                 },
                 {
-                    "count": "50+",
+                    "count": "5000+",
                     "name": "Clients",
                     "description": "Trusted Partners in Public & Private Sectors"
                 },
                 {
                     "count": "100%",
                     "name": "Commitments",
-                    "description": "To Quality, Safety & Client Satisfaction"
+                    "description": "To Quality, Safety & Customer Satisfaction"
                 }
             ],
             "action": {
@@ -47,7 +47,7 @@
         },
         "ourProductAndService": {
             "description": "From procurement to project execution, AL says Trading Co. delivers tailored solutions with unmatched reliability and professionalism.",
-            "title": "Delivering Value Through Services",
+            "title": "Delivering Value Through High Quality Product Brands and Best Services in line with global sustainability goals",
             "subHeading": "OUR PRODUCTS & SERVICES",
             "action": {
                 "title": "Explore all",
@@ -76,7 +76,7 @@
                 },
                 {
                     "name": "FMCG Products",
-                    "description": "AL Says distributes high quality of brands of products under fast moving consumer goods (FMCG), women and baby care, hygienic care, safety care, and medical care. AL Says, represents high quality of brands originally manufacture from Turky. ",
+                    "description": "AL Says distributes high quality of brands of products under fast moving consumer goods (FMCG), detergent and cleaning chemicals, diapers and consumables, PPE & Safety Gear, and Lab Equipment.",
                     "services": [
                         "Design and build of Camps (Wet and Dry Trailers, Ablution Units etc)",
                         "Permanent and Semi-Permanent Structures",
@@ -94,7 +94,7 @@
                 },
                 {
                     "name": "Automotive Parts & Consumables",
-                    "description": "AL Says distribute Air conditioning parts for light vehicles and other spare parts for mechanical and the general parts as well. This includes compressor, evaporator, condenser, fan, valves, fan motor, cooling parts, A/C oils, radiators, and other. In addition, distribute also parts for trucks and heavy equipment such as engine filters, pump, horses, hydraulic parts, transmission parts, tires, brake parts, lubricants, consumables, and other. AL Says focuses on high quality world known and reputed brands on this both aftermarket and the genuine parts as well. ",
+                    "description": "AL Says distributes Air conditioning parts for light vehicles and other spare parts for mechanical and the general parts as well. This includes compressor, evaporator, condenser, fan, valves, fan motor, cooling parts, A/C oils, radiators, and other. In addition, distribute also parts for trucks and heavy equipment such as engine filters, pump, horses, hydraulic parts, transmission parts, tires, brake parts, lubricants, consumables, and other. AL Says focuses on high quality world known and reputed brands on this both aftermarket and the genuine parts as well. ",
                     "services": [
                         "Supply and installation of Generators (Both 230 V and 110 V)",
                         "Design, supply and installation of electrical panels",
@@ -109,7 +109,7 @@
             ]
         },
         "whatWeAre": {
-            "title": "Driven by excellence and built on trust, we deliver reliable solutions that meet the needs of modern industries across Saudi Arabia.",
+            "title": "Driven by excellence and built on trust, we deliver reliable solutions that meet the needs of modern industries across globe.",
             "description": "We have the capability to design, procure and install electrical systems that includes design and install of panels, cabling and power generation systems for camps and onshore rigs. Some of our capabilities are:"
         }
     }

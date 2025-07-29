@@ -18,6 +18,7 @@ export default function Footer() {
                                 src={Logo}
                                 alt="Logo of Al Says Trading & Contracting"
                                 className=""
+                                width={130}
                             />
                             <div className='max-w-[327px] space-y-4'>
                                 <p className='title-sm uppercase'>{footer.title}</p>
@@ -42,7 +43,7 @@ export default function Footer() {
                                     <h3 className='title-sm uppercase mb-4'>{link.title}</h3>
                                     <ul className='flex flex-col gap-y-2.5'>
                                         {link.links.map((item) => (
-                                            <li key={item.name} className='body-sm text-grey-100 mb-2'>
+                                            <li key={item.name} className='body-sm text-grey-100 mb-2 text-no'>
                                                 <Link href={item.link}>
                                                     {item.name}
                                                 </Link>
@@ -51,7 +52,7 @@ export default function Footer() {
                                     </ul>
                                 </div>
                             ))}
-                            <div className='space-y-5'>
+                            <div className='space-y-5 max-w-[240px]'>
                                 <h3 className='title-sm uppercase mb-4'>{footer.address.title}</h3>
                                 <div className='space-y-6 body-sm text-grey-100'>
                                     <div className='flex '>
@@ -62,19 +63,16 @@ export default function Footer() {
                                         <Icon.Phone/>
                                         <p className='ml-1'>{footer.address.phone}</p>
                                     </div>
-                                    <div className='flex'>
+                                    <div className='flex max-w-[250px]'>
                                         <Icon.Email/>
                                         <p className='ml-1'>{footer.address.email}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className='space-y-8'>
+                        <div className='space-y-8 max-w-[280px]'>
                             <p className='title-sm uppercase mb-4 tracking-tight'>
                                 {footer.subscription.title}
-                            </p>
-                            <p className='max-w-[300px] text-grey-100 body-sm'>
-                                {footer.subscription.description}
                             </p>
                             <form className='flex  gap-y-4 bg-white/10 items-center rounded-full px-[5] py-1'>
                                 <Input
@@ -83,11 +81,12 @@ export default function Footer() {
                                     className='px-4 flex-1 !bg-transparent rounded-full outline-0 border-none text-grey-100 body-sm placeholder:text-grey-200'
                                 />
                                 <Button
+                                   
                                     type='submit'
                                     variant="secondary"
                                     className='rounded-full  body-sm  transition-colors duration-300'
                                 >
-                                    Subscribe
+                                    <Link href="/contact-us">Subscribe</Link>
                                 </Button>
                             </form>
                         </div>
@@ -95,7 +94,7 @@ export default function Footer() {
                 </div>
                 <div className='px-6 py-4 mt-10 bg-white/10 rounded-full flex flex-wrap max-md:justify-center justify-between items-center'>
                     <span className='text-grey-200 body-sm'>
-                        © Al Sais 2025 | All Rights Reserved
+                        © AL Says Company FZE 2025 | All Rights Reserved
                     </span>
                     <div>
                         <Link href="/privacy-and-policy" className='text-grey-100 body-sm ml-2'>
