@@ -89,7 +89,7 @@ export const MobileMenu = ({ isOpen, menuItems, onClose }: MobileMenuProps) => {
             >
                 <div className="flex flex-col h-full">
                     <div className="p-4 border-b flex items-center justify-between border-gray-100">
-                        <h1 className="aspect-[97/68] h-[32px] md:h-[60px]  lg:h-[68px] relative">
+                        <h1 className="aspect-[97/68] h-[56px] md:h-[60px]  lg:h-[68px] relative">
                             <Link href="/" >
                                 <Image
                                     src={LogoDark}
@@ -104,7 +104,7 @@ export const MobileMenu = ({ isOpen, menuItems, onClose }: MobileMenuProps) => {
                     <div className="flex-1 overflow-y-auto">{menuItems.map((item) => renderMenuItem(item))}</div>
 
                     <div className="p-4 border-t border-gray-100 flex justify-end">
-                        <Button className="w-full max-w-[120px] " onClick={onClose}>
+                        <Button className="w-full md:max-w-[120px] " onClick={onClose}>
                             Contact Us
                         </Button>
                     </div>

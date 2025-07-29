@@ -70,7 +70,7 @@ export default function Footer() {
                                 </div>
                             </div>
                         </div>
-                        <div className='space-y-8 max-w-[280px]'>
+                        <div className='space-y-8 md:max-w-[280px]'>
                             <p className='title-sm uppercase mb-4 tracking-tight'>
                                 {footer.subscription.title}
                             </p>

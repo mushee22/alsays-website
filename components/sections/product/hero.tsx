@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function HeroSection({ title, image, description }: Pick<Product, 'title' | 'image' | 'description'>) {
     return (
-        <Container className="py-12 md:py-24 md:mt-12">
+        <Container className="pt-24 pb-12 md:py-24 md:mt-12">
             <div className="flex flex-col md:flex-row gap-y-6 gap-x-12">
                 <div className="aspect-[630/497] bg-grey-200 h-[320px] relative hidden sm:block lg:h-[497px] rounded-3xl">
                     {

@@ -118,7 +118,7 @@ export default function NavBar({ categories } : { categories?: Category[] }) {
                     <button onClick={toggleMobileMenu} className="lg:hidden flex flex-col items-center justify-center relative" aria-label="Toggle mobile menu">
                         <Menu
                             className={cn(
-                                "w-6 h-6 text-primary absolute transition-all duration-300",
+                                "w-6 h-6 text-primary absolute transition-all duration-300 mr-6",
                                 isMobileMenuOpen ? "opacity-0 rotate-45" : "opacity-100 rotate-0",
                             )}
                         />

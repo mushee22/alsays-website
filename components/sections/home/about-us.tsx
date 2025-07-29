@@ -25,7 +25,7 @@ export default function AboutSection() {
                     <LinkButton href={action.path}>
                         {action.title}
                     </LinkButton>
-                    <div className="grid  sm:grid-cols-3 gap-2.5">
+                    <div className="grid  sm:grid-cols-3 gap-x-2.5 gap-y-6">
                         {
                             statistics.map((statistic) => (
                                 <AchievementCard

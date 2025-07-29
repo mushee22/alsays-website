@@ -13,7 +13,7 @@ interface Props {
 export default async function HeroSection({ name, description, image, categoryName }: Props) {
 
     return (
-        <Container className="py-12 md:py-24 md:mt-12">
+        <Container className="pt-24 pb-12 md:py-24 md:mt-12">
             <div className="flex flex-col md:flex-row gap-y-6 gap-x-12 items-center">
                 <div className="flex flex-col gap-y-3 md:gap-y-7 items-start">
                     {
