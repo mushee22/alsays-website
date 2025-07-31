@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     `,
     images: [
       {
-        url: "https://alsaistrading.com/menu-side-image.jpg", // Prefer JPG/PNG/WebP
+        url: "https://alsaistrading.com/menu-side-image.svg", // Prefer JPG/PNG/WebP
         width: 1200,
         height: 630,
         alt: "AL Says Company FZE – Global Supply & Logistics",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
       We supply flooring items, construction materials, oil-field equipment, IT solutions, 
       and food products across the GCC and MENA regions. Trusted for operations, O&M, and turnkey services.
     `,
-    images: ["https://alsaistrading.com/menu-side-image.jpg"],
+    images: ["https://alsaistrading.com/menu-side-image.svg"],
   },
   alternates: {
     canonical: "https://alsaistrading.com",
