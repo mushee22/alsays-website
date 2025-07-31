@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     `,
     images: [
       {
-        url: "https://alsaistrading.com/menu-side-image.svg", // Prefer JPG/PNG/WebP
+        url: "https://alsaistrading.com/alsase.png",
         width: 1200,
         height: 630,
         alt: "AL Says Company FZE – Global Supply & Logistics",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@alsaiscompany", // Optional: your Twitter handle
+    site: "@alsaiscompany",
     title:
       "AL Says Company FZE – Global Supply & Logistics | Flooring, Food & Industrial Services",
     description: `
@@ -64,21 +64,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://alsaistrading.com",
   },
-  // robots: {
-  //   index: true,
-  //   follow: true,
-  //   googleBot: {
-  //     index: true,
-  //     follow: true,
-  //     "max-snippet": -1,
-  //     "max-image-preview": "large",
-  //     "max-video-preview": -1,
-  //   },
-  // },
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
-    // apple: "/apple-touch-icon.png",
   },
   creator: "AL Says Company FZE",
 };
