@@ -6,14 +6,17 @@ import "./globals.css";
 const manrope = Manrope({
   variable: "--font-manrope-sans",
   subsets: ["latin"],
-  weight: ["400", "500", "700"]
+  weight: ["400", "500", "700"],
 });
 
-
-
 export const metadata: Metadata = {
-  title: "Al Says Trading & Contracting",
-  description: "Alsais Trading provides high-quality industrial materials, oilfield equipment, safety products, and construction materials in Saudi Arabia.",
+  title:
+    "AL Says Company FZE – Global Supply & Logistics | Flooring, Food & Industrial Services",
+  description: `
+  AL Says Company FZE is a global trading and logistics company based in the UAE, India, and Kuwait. 
+  We supply flooring items, construction materials, oil-field equipment, IT solutions, 
+  and food products across the GCC and MENA regions. Trusted for operations, O&M, and turnkey services.
+  `,
   keywords: [
     "Alsais Trading",
     "Saudi Arabia",
@@ -24,9 +27,17 @@ export const metadata: Metadata = {
     "automotive parts",
     "electrical supplies",
   ],
+  openGraph: {
+    title:
+      "AL Says Company FZE – Global Supply & Logistics | Flooring, Food & Industrial Services",
+    description: `
+     AL Says Company FZE is a global trading and logistics company based in the UAE, India, and Kuwait. 
+  We supply flooring items, construction materials, oil-field equipment, IT solutions, 
+  and food products across the GCC and MENA regions. Trusted for operations, O&M, and turnkey services.
+    `,
+    images: "/menu-side-image.svg",
+  },
 };
-
-
 
 export default function RootLayout({
   children,
@@ -35,10 +46,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.variable}  antialiased h-screen flex flex-col`}>
-        <Layout>
-          {children}
-        </Layout>
+      <body
+        className={`${manrope.variable}  antialiased h-screen flex flex-col`}
+      >
+        <Layout>{children}</Layout>
       </body>
     </html>
   );
