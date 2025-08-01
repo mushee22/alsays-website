@@ -16,6 +16,9 @@ export const getBanners = unstable_cache(async () => {
     return homeBannerService.find({
         populate: {
             image: true
+        },
+        sort: {
+            order: "ASC"
         }
     })
 }, [], { tags: [MODEL_NAME.banner] })
