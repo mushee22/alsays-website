@@ -7,7 +7,7 @@ export default function OurGlobalLocationSection() {
 
   return (
     <Container className="section-spacing">
-      <h2 className="title text-center">{title}</h2>
+      {/* <h2 className="title text-center">{title}</h2> */}
       <div className=" pt-5 md:pt-10">
         <OurMarketBoundariesSection />
       </div>

@@ -28,13 +28,13 @@ export default function HeroSection() {
                 <AchievementCard
                     count="200+"
                     type="Project"
-                    description="Successfully Completed Across Saudi Arabia"
+                    description="Successfully Completed Across Global"
                     className="items-center max-w-[220px]"
                     data-text="center"
                     variant="about"
                 />
                 <AchievementCard
-                    count="50+"
+                    count="5000+"
                     type="Clients"
                     description="Trusted Partners in Public & Private Sectors"
                     className="items-center max-w-[220px]"
@@ -44,7 +44,7 @@ export default function HeroSection() {
                 <AchievementCard
                     count="100%"
                     type="Commitments"
-                    description="To Quality, Safety & Client Satisfaction"
+                    description="To Quality, Safety & Customer Satisfaction"
                     className="items-center max-w-[220px]"
                     data-text="center"
                     variant="about"

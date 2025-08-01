@@ -9,14 +9,14 @@ const manrope = Manrope({
   weight: ["400", "500", "700"],
 });
 
+const title = "Al Says Company FZE the flagship business business organisation.";
+const description = `
+Description: distribute branded products across flooring mats/ FMCG / automotive parts / Safety and oilfield / foodstuffs/ climate chnage and environmental products and many more.
+`
+
 export const metadata: Metadata = {
-  title:
-    "AL Says Company FZE – Global Supply & Logistics | Flooring, Food & Industrial Services",
-  description: `
-    AL Says Company FZE is a global trading and logistics company based in the UAE, India, and Kuwait. 
-    We supply flooring items, construction materials, oil-field equipment, IT solutions, 
-    and food products across the GCC and MENA regions. Trusted for operations, O&M, and turnkey services.
-  `,
+  title: title,
+  description: description,
   keywords: [
     "Alsais Trading",
     "Saudi Arabia",
@@ -33,13 +33,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://alsaistrading.com",
     siteName: "AL Says Company FZE",
-    title:
-      "AL Says Company FZE – Global Supply & Logistics | Flooring, Food & Industrial Services",
-    description: `
-      AL Says Company FZE is a global trading and logistics company based in the UAE, India, and Kuwait. 
-      We supply flooring items, construction materials, oil-field equipment, IT solutions, 
-      and food products across the GCC and MENA regions. Trusted for operations, O&M, and turnkey services.
-    `,
+    title: title,
+    description: description,
     images: [
       {
         url: "https://alsaistrading.com/og-image.jpeg",
@@ -52,13 +47,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@alsaiscompany",
-    title:
-      "AL Says Company FZE – Global Supply & Logistics | Flooring, Food & Industrial Services",
-    description: `
-      AL Says Company FZE is a global trading and logistics company based in the UAE, India, and Kuwait. 
-      We supply flooring items, construction materials, oil-field equipment, IT solutions, 
-      and food products across the GCC and MENA regions. Trusted for operations, O&M, and turnkey services.
-    `,
+    title: title,
+    description: description,
     images: ["https://alsaistrading.com/og-image.jpeg"],
   },
   alternates: {
