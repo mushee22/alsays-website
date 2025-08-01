@@ -1,9 +1,9 @@
 import Container from "@/components/ui/container";
-import data from "@/data/contact.json";
+
 import { OurMarketBoundariesSection } from "../market-presence";
 
 export default function OurGlobalLocationSection() {
-  const { title } = data.sections.location;
+
 
   return (
     <Container className="section-spacing">
