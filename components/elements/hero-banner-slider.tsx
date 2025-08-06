@@ -2,13 +2,9 @@
 import { getStrapiImageURL } from "@/lib/config";
 import { HomeBenner } from "@/types";
 import Autoplay from "embla-carousel-autoplay";
-import useEmblaCarousel, {
-  type UseEmblaCarouselType,
-} from "embla-carousel-react";
+import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
-import { useCallback, useEffect, useState } from "react";
-
-type CarouselApi = UseEmblaCarouselType[1];
+import { useEffect, useState } from "react";
 
 export default function HeroBannerSlider({
   banners = [],
@@ -37,12 +33,18 @@ export default function HeroBannerSlider({
     })
   }, [
     Autoplay({
-      delay: 3000,
+      delay: 5000,
+      stopOnInteraction: false,
+      stopOnMouseEnter: false,
     }),
   ]);
 
+  if (banners.length === 0) {
+    return null; // Don't render anything if no banners
+  }
+
   return (
-    <div className="embla">
+    <div className="embla relative overflow-hidden">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {banners.map((banner, index) => (
@@ -53,6 +55,7 @@ export default function HeroBannerSlider({
                   alt={banner?.altText ?? "Banner Image"}
                   fill
                   className="object-cover"
+                  priority={index === 0}
                 />
               </div>
             </div>
@@ -63,44 +66,4 @@ export default function HeroBannerSlider({
   );
 }
 
-export const useDotButton = (
-  emblaApi: CarouselApi | undefined,
-  onButtonClick?: (emblaApi: CarouselApi) => void
-) => {
-  const [selectedIndex, setSelectedIndex] = useState(0);
-  const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
-
-  const onDotButtonClick = useCallback(
-    (index: number) => {
-      if (!emblaApi) return;
-      emblaApi.scrollTo(index);
-      if (onButtonClick) onButtonClick(emblaApi);
-    },
-    [emblaApi, onButtonClick]
-  );
-
-  const onInit = useCallback((emblaApi: CarouselApi) => {
-    if (!emblaApi) return;
-    setScrollSnaps(emblaApi?.scrollSnapList());
-  }, []);
-
-  const onSelect = useCallback((emblaApi: CarouselApi) => {
-    if (emblaApi) setSelectedIndex(emblaApi?.selectedScrollSnap());
-  }, []);
-
-  useEffect(() => {
-    if (!emblaApi) return;
-
-    onInit(emblaApi);
-    onSelect(emblaApi);
-
-    emblaApi.on("reInit", onInit).on("reInit", onSelect).on("select", onSelect);
-  }, [emblaApi, onInit, onSelect]);
-
-  return {
-    selectedIndex,
-    scrollSnaps,
-    onDotButtonClick,
-  };
-};
 
