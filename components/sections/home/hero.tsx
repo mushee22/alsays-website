@@ -8,7 +8,8 @@ export default async function HeroSection() {
   const { data: banners = [] } = await getBanners();
 
   return (
-    <section className="section-spacing  lg:pt-28">
+    <section className="section-spacing  lg:pb-14">
+      <HeroBannerSlider banners={banners} />
       <div className="absolute container hidden md:block left-1/2 -top-0 -translate-x-1/2 px-6">
         <Image
           src={GridLayoutBg}
@@ -16,7 +17,7 @@ export default async function HeroSection() {
           className="absolute pointer-events-none"
         />
       </div>
-      <div className="container pt-20 md:pt-28">
+      <div className="container pt-10 md:pt-12">
         <div className=" gap-y-7 flex justify-end items-center text-center flex-col pb-12">
           <h1 className="heading-xl text-primary text-center max-w-[900px]">
             Comprehensive Trading Solutions <br /> Under One Roof
@@ -28,7 +29,7 @@ export default async function HeroSection() {
           <LinkButton href={"/contact-us"}>Submit an Enquiry</LinkButton>
         </div>
       </div>
-      <HeroBannerSlider banners={banners} />
+      
     </section>
   );
 }
