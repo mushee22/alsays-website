@@ -14,6 +14,7 @@ export default async function CategoryPage({ slug = '' }: { slug?: string }) {
         description={category?.description || ''}
         name={category?.name || ''}
         image={category?.image || null}
+        brochure={category?.brochure || null}
       />
       {
         category?.subCategories && category?.subCategories.length > 0 &&

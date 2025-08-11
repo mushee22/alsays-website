@@ -19,6 +19,7 @@ export const getCategoryBySlug = unstable_cache(
         return categoryService.findBySlug(slug, {
             populate: {
                 image: true,
+                brochure: true,
                 subCategories: {
                     populate: {
                         image: true,

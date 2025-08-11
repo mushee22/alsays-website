@@ -153,6 +153,7 @@ export interface Category {
   createdAt: string;
   updatedAt: string;
   order: number;
+  brochure?: StrapiImage | null;
 }
 
 export interface SubCategory {

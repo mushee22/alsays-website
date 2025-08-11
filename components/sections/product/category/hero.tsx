@@ -1,4 +1,5 @@
 import Container from "@/components/ui/container";
+import LinkButton from "@/components/ui/link-button";
 import { getStrapiImageURL } from "@/lib/config";
 import { StrapiImage } from "@/types";
 import Image from "next/image";
@@ -8,9 +9,10 @@ interface Props {
     description: string,
     image?: StrapiImage | null,
     categoryName?: string
+    brochure?: StrapiImage | null
 }
 
-export default async function HeroSection({ name, description, image, categoryName }: Props) {
+export default async function HeroSection({ name, description, image, categoryName, brochure }: Props) {
 
     return (
         <Container className="pt-24 pb-12 md:py-24 md:mt-12">
@@ -39,7 +41,13 @@ export default async function HeroSection({ name, description, image, categoryNa
                             description
                         }
                     </p>
-                    {/* <Button>View Products</Button> */}
+                   
+                    {
+                        brochure &&
+                        <LinkButton href={getStrapiImageURL(brochure?.url) ?? ''} download>
+                            Download Brochure
+                        </LinkButton>
+                    }
                 </div>
                 <div className="aspect-[630/497] bg-grey-200 h-[320px] hidden sm:block relative lg:h-[497px] rounded-3xl">
                     {
