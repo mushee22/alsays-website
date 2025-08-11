@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function ProductCard(product: Product) {
   return (
-    <div className="flex flex-col hover:shadow transition-all duration-500 cursor-pointer hover:rounded-2xl">
+    <div className="flex flex-col">
       <div className="aspect-square bg-grey-100 rounded-2xl  relative">
         {product.image && product.image.length && product.image[0]?.url && (
           <Image
