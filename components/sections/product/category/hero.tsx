@@ -44,7 +44,7 @@ export default async function HeroSection({ name, description, image, categoryNa
                    
                     {
                         brochure &&
-                        <LinkButton href={getStrapiImageURL(brochure?.url) ?? ''} download>
+                        <LinkButton href={getStrapiImageURL(brochure?.url) ?? ''} download target="_blank">
                             Download Brochure
                         </LinkButton>
                     }
