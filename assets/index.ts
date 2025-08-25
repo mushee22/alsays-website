@@ -62,6 +62,16 @@ import BlogImageOne from "@/assets/images/blog/blog-1.png";
 import BlogImageTwo from "@/assets/images/blog/blog-2.png";
 import BlogImageThree from "@/assets/images/blog/blog-3.png";
 
+import OurValuesCleanIcon from "@/assets/images/about/clean.png";
+import OurValuesCollaborationIcon from "@/assets/images/about/collaboration.png"
+import OurValuesIntegrityIcon from "@/assets/images/about/Integrity.png"
+import OurValuesCommonGoodIcon from "@/assets/images/about/common-good.png"
+import OurValuesInterdependenceIcon from "@/assets/images/about/interdependent-and-interconnected.png"
+import OurValuesReduceTheEnvironmentIcon from "@/assets/images/about/reduce-the-environmental-warming.png"
+import OurValuesResilienceIcon from "@/assets/images/about/resilience.png"
+import OurValuesPeopleAtWorkIcon from "@/assets/images/about/People-first at work.png"
+import OurValuesContinuousLearningIcon from "@/assets/images/about/continuous-learning.png"
+
 
 export {
     AboutHeroSectionBgImage, AboutLeftImage, BannerImageFive, BannerImageFour, BannerImageOne, BannerImageSeven, BannerImageSix, BannerImageThree, BannerImageTwo, BannerOneImage,
@@ -89,6 +99,15 @@ export {
     SustainabilityHeroImage,
     WhyChooseUsImage,
     XIcon,
-    LinkdInIcon
+    LinkdInIcon,
+    OurValuesCleanIcon,
+    OurValuesCollaborationIcon,
+    OurValuesIntegrityIcon,
+    OurValuesCommonGoodIcon,
+    OurValuesInterdependenceIcon,
+    OurValuesReduceTheEnvironmentIcon,
+    OurValuesResilienceIcon,
+    OurValuesPeopleAtWorkIcon,
+    OurValuesContinuousLearningIcon
 };
 

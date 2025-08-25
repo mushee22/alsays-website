@@ -1,18 +1,32 @@
 import { cn } from "@/lib/utils";
+import Image, { StaticImageData } from "next/image";
 
 
 interface ValueCard {
-    icon?: string,
+    icon?: string | StaticImageData,
     title?: string;
     description?: string;
     className?: string;
 }
 
-export default function ValueCard({ title, className = '' }: ValueCard) {
+export default function ValueCard({ icon, title, className = '' }: ValueCard) {
     return (
         <div className={cn("p-6 rounded-2xl bg-[#F8FAFC] space-y-7", className)}>
             <div className="w-11 h-11 flex flex-col justify-center items-center icon-container">
-                <svg
+                {
+                    icon && (
+                        <Image
+                            src={icon}
+                            alt={title || ''}
+                            width={24}
+                            height={24}
+                            className="w-full h-full"
+                            unoptimized
+                            // quality={100}
+                        />
+                    )
+                }
+                {/* <svg
                     width={24}
                     height={24}
                     viewBox="0 0 24 24"
@@ -35,7 +49,8 @@ export default function ValueCard({ title, className = '' }: ValueCard) {
                         d="M12 4.75C11.59 4.75 11.25 4.41 11.25 4V2C11.25 1.59 11.59 1.25 12 1.25C12.41 1.25 12.75 1.59 12.75 2V4C12.75 4.41 12.41 4.75 12 4.75Z"
                         fill="#0D5A9B"
                     />
-                </svg>
+                </svg> */}
+                 
             </div>
             <div className="space-y-2.5">
                 <p className="title-lg text-grey-900">{title}</p>

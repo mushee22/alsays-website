@@ -1,5 +1,17 @@
 import ValueCard from "@/components/elements/value-card";
 import Container from "@/components/ui/container";
+import {
+    OurValuesCleanIcon,
+    OurValuesCommonGoodIcon,
+    OurValuesCollaborationIcon,
+    OurValuesIntegrityIcon,
+    OurValuesResilienceIcon,
+    OurValuesInterdependenceIcon,
+    OurValuesPeopleAtWorkIcon,
+    OurValuesReduceTheEnvironmentIcon,
+    OurValuesContinuousLearningIcon
+    
+} from "@/assets"
 
 export default function OurValuesSection() {
     return (
@@ -18,6 +30,7 @@ export default function OurValuesSection() {
                                 key={value.title + index}
                                 title={value.title}
                                 description={value.description}
+                                icon={value.icon}
                             />
                         ))
                     }
@@ -32,38 +45,48 @@ export default function OurValuesSection() {
 const valus = [
     {
         title: "Common Good",
-        description: "We act with honesty, fairness, and responsibility in all our dealings."
+        description: "We act with honesty, fairness, and responsibility in all our dealings.",
+        icon: OurValuesCommonGoodIcon,
     },
+
     {
         title: "Collaborations",
-        description: "We strive for the highest standards in quality, service, and performance."
+        description: "We strive for the highest standards in quality, service, and performance.",
+        icon: OurValuesCollaborationIcon,
     },
     {
         title: "People-first at work",
-        description: "Our clients are at the center of everything we do."
+        description: "Our clients are at the center of everything we do.",
+        icon: OurValuesPeopleAtWorkIcon,
     },
     {
         title: "Clean Natural Environment",
-        description: "We uphold strict safety protocols and regulatory compliance in all operations."
+        description: "We uphold strict safety protocols and regulatory compliance in all operations.",
+        icon: OurValuesCleanIcon,
     },
     {
         title: "Reduce the environmental warming",
-        description: "mprove services and exceed expectations."
+        description: "mprove services and exceed expectations.",
+        icon: OurValuesReduceTheEnvironmentIcon,
     },
     {
         title: "Continuous learning",
-        description: "We value teamwork and long-term relationships with our clients, partners, and employees."
+        description: "We value teamwork and long-term relationships with our clients, partners, and employees.",
+        icon: OurValuesContinuousLearningIcon,
     },
     {
         title: "Resilience",
-        description: "We value teamwork and long-term relationships with our clients, partners, and employees."
+        description: "We value teamwork and long-term relationships with our clients, partners, and employees.",
+        icon: OurValuesResilienceIcon,
     },
     {
         title: "Interdependent and interconnected",
-        description: "Relationships with our clients, partners, and employees."
+        description: "Relationships with our clients, partners, and employees.",
+        icon: OurValuesInterdependenceIcon,
     },
     {
         title: "Integrity",
-        description: "We value teamwork and long-term relationships with our clients, partners, and employees."
+        description: "We value teamwork and long-term relationships with our clients, partners, and employees.",
+        icon: OurValuesIntegrityIcon,
     }
 ]
